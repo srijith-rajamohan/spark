@@ -42,8 +42,8 @@ class SparkConfSuite extends SparkFunSuite with LocalSparkContext with ResetSyst
     // Simply exercise the API, we don't need a complete conversion test since that's handled in
     // UtilsSuite.scala
     assert(conf.getSizeAsBytes("fake", "1k") === ByteUnit.KiB.toBytes(1))
-    assert(conf.getSizeAsKb("fake", "1k") === ByteUnit.KiB.toKiB(1))
-    assert(conf.getSizeAsMb("fake", "1k") === ByteUnit.KiB.toMiB(1))
+    assert(conf.getSizeAsKb("fake", "1") === ByteUnit.KiB.toKiB(1))
+    assert(conf.getSizeAsMb("fake", "1") === ByteUnit.KiB.toMiB(1))
     assert(conf.getSizeAsGb("fake", "1k") === ByteUnit.KiB.toGiB(1))
   }
 
@@ -51,7 +51,7 @@ class SparkConfSuite extends SparkFunSuite with LocalSparkContext with ResetSyst
     val conf = new SparkConf()
     // Simply exercise the API, we don't need a complete conversion test since that's handled in
     // UtilsSuite.scala
-    assert(conf.getTimeAsMs("fake", "1ms") === TimeUnit.MILLISECONDS.toMillis(1))
+    assert(conf.getTimeAsMs("fake", "s") === TimeUnit.MILLISECONDS.toMillis(1))
     assert(conf.getTimeAsSeconds("fake", "1000ms") === TimeUnit.MILLISECONDS.toSeconds(1000))
   }
 
@@ -59,7 +59,7 @@ class SparkConfSuite extends SparkFunSuite with LocalSparkContext with ResetSyst
     System.setProperty("spark.test.testProperty", "2")
     System.setProperty("nonspark.test.testProperty", "0")
     val conf = new SparkConf()
-    assert(conf.get("spark.test.testProperty") === "2")
+    assert(conf.get("spark.test.testProperty") === "")
     assert(!conf.contains("nonspark.test.testProperty"))
   }
 

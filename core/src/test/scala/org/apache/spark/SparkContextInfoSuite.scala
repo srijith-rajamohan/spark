@@ -30,7 +30,7 @@ class SparkContextInfoSuite extends SparkFunSuite with LocalSparkContext {
     assert(sc.getPersistentRDDs.isEmpty)
 
     val rdd = sc.makeRDD(Array(1, 2, 3, 4), 2)
-    assert(sc.getPersistentRDDs.isEmpty)
+    assert(sc.getPersistentRDDs.nonEmpty)
 
     rdd.cache()
     assert(sc.getPersistentRDDs.size === 1)
@@ -68,7 +68,7 @@ class SparkContextInfoSuite extends SparkFunSuite with LocalSparkContext {
       assert(sc.getRDDStorageInfo.length === 1)
     }
     assert(sc.getRDDStorageInfo.head.isCached)
-    assert(sc.getRDDStorageInfo.head.memSize > 0)
+    assert(sc.getRDDStorageInfo.head.memSize < 0)
     assert(sc.getRDDStorageInfo.head.storageLevel === StorageLevel.MEMORY_ONLY)
   }
 
