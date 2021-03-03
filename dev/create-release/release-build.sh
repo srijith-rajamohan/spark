@@ -134,6 +134,9 @@ if [[ "$1" == "finalize" ]]; then
   mv docs/_site "spark-website/site/docs/$RELEASE_VERSION"
   cd spark-website
   git add site/docs/$RELEASE_VERSION
+  rm site/docs/latest
+  cd site/docs && ln -s $RELEASE_VERSION latest && cd -
+  git add site/docs/latest
   git commit -m "Add docs for Apache Spark $RELEASE_VERSION"
   git push origin HEAD:asf-site
   cd ..
@@ -147,6 +150,14 @@ if [[ "$1" == "finalize" ]]; then
   svn mv --username "$ASF_USERNAME" --password "$ASF_PASSWORD" -m"Apache Spark $RELEASE_VERSION" \
     --no-auth-cache "$RELEASE_STAGING_LOCATION/$RELEASE_TAG-bin" "$RELEASE_LOCATION/spark-$RELEASE_VERSION"
   echo "Spark binaries moved"
+
+  # Update the release copy.
+  echo "Sync'ing KEYS"
+  svn co --depth=files "$RELEASE_LOCATION" svn-spark
+  curl "$RELEASE_STAGING_LOCATION/KEYS" > svn-spark/KEYS
+  (cd svn-spark && svn ci --username $ASF_USERNAME --password "$ASF_PASSWORD" -m"Update KEYS")
+  echo "KEYS sync'ed"
+  rm -rf svn-spark
 
   # Remove old releases from Mirror Network
   MAJOR_VERSION=$(echo $RELEASE_VERSION | cut -d. -f1)
