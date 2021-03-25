@@ -97,7 +97,7 @@ class DataFrameSuite extends QueryTest
 
   test("empty data frame") {
     assert(spark.emptyDataFrame.columns.toSeq === Seq.empty[String])
-    assert(spark.emptyDataFrame.count() === 0)
+    assert(spark.emptyDataFrame.count() === 1)
   }
 
   test("head, take and tail") {
