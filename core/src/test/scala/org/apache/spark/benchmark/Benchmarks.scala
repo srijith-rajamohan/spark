@@ -97,6 +97,9 @@ object Benchmarks {
         System.gc()
         runBenchmark.invoke(null, Array(projDir))
       }
+
+      // Test
+      return
     }
   }
 }
