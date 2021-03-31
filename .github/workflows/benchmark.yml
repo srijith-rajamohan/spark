@@ -61,7 +61,6 @@ jobs:
         # java-version: ${{ github.event.inputs.jdk }}
         java-version: 8
     - name: Run benchmarks
-      id: run_benchmarks
 #       run: |
 #         ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
 #         SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class org.apache.spark.benchmark.Benchmarks \
@@ -72,18 +71,12 @@ jobs:
         # In benchmark, we use local as master so set driver memory only. Note that GitHub Actions has 7 GB memory limit.
         SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --driver-memory 6g --class org.apache.spark.benchmark.Benchmarks \
           --jars "`find . -name '*-SNAPSHOT-tests.jar' | paste -sd ',' -`" "`find . -name 'spark-core*-SNAPSHOT-tests.jar'`" "*"
-        # Referred to https://github.community/t/set-output-truncates-multiline-strings/16852/9
-        # in order to keep the newlines in set-output.
-        diff_files=`git diff --name-only`
-        echo "Will upload the files below:"
-        echo $diff_files
-        diff_files="${diff_files//'%'/'%25'}"
-        diff_files="${diff_files//$'\n'/'%0A'}"
-        diff_files="${diff_files//$'\r'/'%0D'}"
-        echo "::set-output name=DIFF_LIST::$diff_files"
+        # To keep the directory structure, tar them
+        # See also https://github.com/actions/upload-artifact#maintaining-file-permissions-and-case-sensitive-files
+        tar -cvf benchmark-results-8.tar `git diff --name-only`
     - name: Upload benchmark results
       uses: actions/upload-artifact@v2
       with:
         # name: benchmark-results-${{ github.event.inputs.class }}-${{ github.event.inputs.jdk }}
         name: benchmark-results-8
-        path: ${{ steps.run_benchmarks.outputs.DIFF_LIST }}
+        path: benchmark-results-8.tar

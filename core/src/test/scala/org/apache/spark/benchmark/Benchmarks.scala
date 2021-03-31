@@ -69,6 +69,7 @@ import com.google.common.reflect.ClassPath
 
 object Benchmarks {
   def main(args: Array[String]): Unit = {
+    var isBenchmarkFound = false
     ClassPath.from(
       Thread.currentThread.getContextClassLoader
     ).getTopLevelClassesRecursive("org.apache.spark").asScala.foreach { info =>
@@ -84,6 +85,7 @@ object Benchmarks {
           Try(runBenchmark).isSuccess && // Does this has a main method?
           !Modifier.isAbstract(clazz.getModifiers) // Is this a regular class?
       ) {
+        isBenchmarkFound = true
         val targetDirOrProjDir =
           new File(clazz.getProtectionDomain.getCodeSource.getLocation.toURI)
           .getParentFile.getParentFile
@@ -97,7 +99,11 @@ object Benchmarks {
         // Force GC to minimize the side effect.
         System.gc()
         runBenchmark.invoke(null, Array(projDir))
+        // Testddd
+        return
       }
     }
+
+    if (!isBenchmarkFound) throw new RuntimeException("No benchmark found to run.")
   }
 }
