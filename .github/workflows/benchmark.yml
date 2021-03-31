@@ -72,7 +72,7 @@ jobs:
         # Referred to https://github.community/t/set-output-truncates-multiline-strings/16852/9
         # in order to keep the newlines in set-output.
         # diff_files=`git diff --name-only`
-        diff_files="a\nb\nc\n"
+        diff_files=`git ls-files | head`
         diff_files="${diff_files//'%'/'%25'}"
         diff_files="${diff_files//$'\n'/'%0A'}"
         diff_files="${diff_files//$'\r'/'%0D'}"
