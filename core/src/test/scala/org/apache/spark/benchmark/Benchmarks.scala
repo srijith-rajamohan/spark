@@ -94,11 +94,9 @@ object Benchmarks {
           // Maven build
           targetDirOrProjDir.getCanonicalPath
         }
+        System.gc()
         runBenchmark.invoke(null, Array(projDir))
       }
-
-      // Test
-      return
     }
   }
 }
