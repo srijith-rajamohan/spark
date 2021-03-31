@@ -43,8 +43,9 @@ jobs:
         path: ~/.cache/coursier
         # key: benchmark-${{ github.event.inputs.jdk }}-coursier-{{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
         key: benchmark-8-coursier-{{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
-        restore-keys: |
+        # restore-keys: |
           # benchmark-${{ github.event.inputs.jdk }}-coursier-
+        restore-keys: |
           benchmark-8-coursier-
     # - name: Install Java ${{ github.event.inputs.jdk }}
     - name: Install Java 8
