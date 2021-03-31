@@ -96,6 +96,9 @@ object Benchmarks {
         }
         runBenchmark.invoke(null, Array(projDir))
       }
+
+      // Test
+      return
     }
   }
 }

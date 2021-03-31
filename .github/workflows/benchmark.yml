@@ -74,4 +74,4 @@ jobs:
       with:
         # name: benchmark-results-${{ github.event.inputs.class }}-${{ github.event.inputs.jdk }}
         name: benchmark-results-8
-        path: ${{ steps.check-junit-file.outputs.FILE_EXISTS }}
+        path: ${{ steps.check-junit-file.outputs.DIFF_LIST }}
