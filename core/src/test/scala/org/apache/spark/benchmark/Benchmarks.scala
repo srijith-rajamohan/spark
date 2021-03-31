@@ -52,7 +52,7 @@ import com.google.common.reflect.ClassPath
  * {{{
  *   SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class \
  *     org.apache.spark.benchmark.Benchmarks --jars \
- *     "`find . -name "*3.2.0-SNAPSHOT-tests.jar" | paste -sd ',' -`" \
+ *     "`find . -name '*3.2.0-SNAPSHOT-tests.jar' | paste -sd ',' -`" \
  *     ./core/target/spark-core_2.12-3.2.0-SNAPSHOT-tests.jar "*"
  * }}}
  *
@@ -61,7 +61,7 @@ import com.google.common.reflect.ClassPath
  * {{{
  *   bin/spark-submit --class \
  *     org.apache.spark.benchmark.Benchmarks --jars \
- *     "`find . -name "*3.2.0-SNAPSHOT-tests.jar" | paste -sd ',' -`" \
+ *     "`find . -name '*3.2.0-SNAPSHOT-tests.jar' | paste -sd ',' -`" \
  *     ./core/target/scala-2.12/spark-core_2.12-3.2.0-SNAPSHOT-tests.jar \
  *     "org.apache.spark.sql.execution.datasources.*"
  * }}}
