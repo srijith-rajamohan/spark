@@ -62,13 +62,19 @@ jobs:
 #         ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
 #         SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class org.apache.spark.benchmark.Benchmarks \
 #           --jars "`find . -name "*-SNAPSHOT-tests.jar" | paste -sd ',' -`" "`find . -name "spark-core*-SNAPSHOT-tests.jar`" ${{ github.event.inputs.class }}
-#         echo '::set-output name=DIFF_LIST::`git diff --name-only`'
+#         echo "::set-output name=DIFF_LIST::`git diff --name-only`"
       run: |
         ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
         # In benchmark, we use local as master so set driver memory only. Note that GitHub Actions has 7 GB memory limit.
         SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --driver-memory 6g --class org.apache.spark.benchmark.Benchmarks \
           --jars "`find . -name "*-SNAPSHOT-tests.jar" | paste -sd ',' -`" "`find . -name "spark-core*-SNAPSHOT-tests.jar`" "*"
-        echo '::set-output name=DIFF_LIST::`git diff --name-only`'
+        # Referred to https://github.community/t/set-output-truncates-multiline-strings/16852/9
+        # in order to keep the newlines in set-output.
+        diff_files=`git diff --name-only`
+        diff_files="${diff_files//'%'/'%25'}"
+        diff_files="${diff_files//$'\n'/'%0A'}"
+        diff_files="${diff_files//$'\r'/'%0D'}"
+        echo "::set-output name=DIFF_LIST::$diff_files"
     - name: Upload benchmark results
       uses: actions/upload-artifact@v2
       with:
