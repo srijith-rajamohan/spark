@@ -1,0 +1,71 @@
+name: Run benchmarks
+
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       class:
+#         description: 'Benchmark class'
+#         required: false
+#         default: ''
+#       jdk:
+#         description: 'JDK version: 8 (default) or 11'
+#         required: false
+#         default: '8'
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  # Build: build Spark and run the tests for specified modules.
+  benchmark:
+    name: "Run benchmarks: ${{ github.event.inputs.class }} (JDK ${{ github.event.inputs.jdk }})"
+    # Ubuntu 20.04 is the latest LTS. The next LTS is 22.04.
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout Spark repository
+      uses: actions/checkout@v2
+    - name: Cache Scala, SBT and Maven
+      uses: actions/cache@v2
+      with:
+        path: |
+          build/apache-maven-*
+          build/scala-*
+          build/*.jar
+          ~/.sbt
+        key: build-${{ hashFiles('**/pom.xml', 'project/build.properties', 'build/mvn', 'build/sbt', 'build/sbt-launch-lib.bash', 'build/spark-build-info') }}
+        restore-keys: |
+          build-
+    - name: Cache Coursier local repository
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/coursier
+        # key: benchmark-${{ github.event.inputs.jdk }}-coursier-{{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
+        key: benchmark-8-coursier-{{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
+        restore-keys: |
+          # benchmark-${{ github.event.inputs.jdk }}-coursier-
+          benchmark-8-coursier-
+    # - name: Install Java ${{ github.event.inputs.jdk }}
+    - name: Install Java 8
+      uses: actions/setup-java@v1
+      with:
+        # java-version: ${{ github.event.inputs.jdk }}
+        java-version: 8
+    - name: Run tests
+#       run: |
+#         ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
+#         SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class org.apache.spark.benchmark.Benchmarks \
+#           --jars "`find . -name "*-SNAPSHOT-tests.jar" | paste -sd ',' -`" "`find . -name "spark-core*-SNAPSHOT-tests.jar`" ${{ github.event.inputs.class }}
+#         echo '::set-output name=DIFF_LIST::`git diff --name-only`'
+      run: |
+        ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
+        SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class org.apache.spark.benchmark.Benchmarks \
+          --jars "`find . -name "*-SNAPSHOT-tests.jar" | paste -sd ',' -`" "`find . -name "spark-core*-SNAPSHOT-tests.jar`"
+        echo '::set-output name=DIFF_LIST::`git diff --name-only`'
+    - name: Upload benchmark results
+      uses: actions/upload-artifact@v2
+      with:
+        # name: benchmark-results-${{ github.event.inputs.class }}-${{ github.event.inputs.jdk }}
+        name: benchmark-results-8
+        path: ${{ steps.check-junit-file.outputs.FILE_EXISTS }}
