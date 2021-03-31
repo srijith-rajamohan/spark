@@ -94,10 +94,9 @@ object Benchmarks {
           // Maven build
           targetDirOrProjDir.getCanonicalPath
         }
+        // Force GC to minimize the side effect.
         System.gc()
         runBenchmark.invoke(null, Array(projDir))
-        // Test
-        return
       }
     }
   }
