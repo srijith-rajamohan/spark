@@ -37,16 +37,20 @@ jobs:
         key: build-${{ hashFiles('**/pom.xml', 'project/build.properties', 'build/mvn', 'build/sbt', 'build/sbt-launch-lib.bash', 'build/spark-build-info') }}
         restore-keys: |
           build-
+#     - name: Cache Coursier local repository
+#       uses: actions/cache@v2
+#       with:
+#         path: ~/.cache/coursier
+#         key: benchmark-coursier-${{ github.event.inputs.jdk }}-${{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
+#         restore-keys: |
+#           benchmark-coursier-${{ github.event.inputs.jdk }}
     - name: Cache Coursier local repository
       uses: actions/cache@v2
       with:
         path: ~/.cache/coursier
-        # key: benchmark-${{ github.event.inputs.jdk }}-coursier-{{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
-        key: benchmark-8-coursier-{{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
-        # restore-keys: |
-          # benchmark-${{ github.event.inputs.jdk }}-coursier-
+        key: benchmark-coursier-8-${{ hashFiles('**/pom.xml', '**/plugins.sbt') }}
         restore-keys: |
-          benchmark-8-coursier-
+          benchmark-coursier-8-
     # - name: Install Java ${{ github.event.inputs.jdk }}
     - name: Install Java 8
       uses: actions/setup-java@v1
