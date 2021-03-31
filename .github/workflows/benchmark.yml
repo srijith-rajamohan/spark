@@ -6,7 +6,7 @@ name: Run benchmarks
 #       class:
 #         description: 'Benchmark class'
 #         required: false
-#         default: ''
+#         default: '*'
 #       jdk:
 #         description: 'JDK version: 8 (default) or 11'
 #         required: false
@@ -65,8 +65,9 @@ jobs:
 #         echo '::set-output name=DIFF_LIST::`git diff --name-only`'
       run: |
         ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
-        SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class org.apache.spark.benchmark.Benchmarks \
-          --jars "`find . -name "*-SNAPSHOT-tests.jar" | paste -sd ',' -`" "`find . -name "spark-core*-SNAPSHOT-tests.jar`"
+        # In benchmark, we use local as master so set driver memory only. Note that GitHub Actions has 7 GB memory limit.
+        SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --driver-memory 6g --class org.apache.spark.benchmark.Benchmarks \
+          --jars "`find . -name "*-SNAPSHOT-tests.jar" | paste -sd ',' -`" "`find . -name "spark-core*-SNAPSHOT-tests.jar`" "*"
         echo '::set-output name=DIFF_LIST::`git diff --name-only`'
     - name: Upload benchmark results
       uses: actions/upload-artifact@v2

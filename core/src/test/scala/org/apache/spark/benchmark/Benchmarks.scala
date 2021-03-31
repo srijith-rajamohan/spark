@@ -18,6 +18,7 @@ package org.apache.spark.benchmark
 
 import java.io.File
 import java.lang.reflect.Modifier
+import java.nio.file.{FileSystems, Paths}
 
 import scala.collection.JavaConverters._
 import scala.util.Try
@@ -31,9 +32,10 @@ import com.google.common.reflect.ClassPath
  * {{{
  *   1. with spark-submit
  *      bin/spark-submit --class <this class> --jars <all spark test jars> <spark core test jar>
+ *        <glob pattern for class>
  *   2. generate result:
  *      SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class <this class> --jars
- *        <all spark test jars> <spark core test jar>
+ *        <all spark test jars> <spark core test jar> <glob pattern for class>
  *      Results will be written to all corresponding files under "benchmarks/".
  *      Notice that it detects the sub-project's directories from jar's paths so the provided jars
  *      should be properly placed under target (Maven build) or target/scala-* (SBT) when you
@@ -45,12 +47,23 @@ import com.google.common.reflect.ClassPath
  *   find . -name "*3.2.0-SNAPSHOT-tests.jar" | paste -sd ',' -
  * }}}
  *
- * Full command example:
+ * The example below runs, against Maven build Spark, all benchmarks and
+ * generates the results:
  * {{{
  *   SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class \
  *     org.apache.spark.benchmark.Benchmarks --jars \
  *     "`find . -name "*3.2.0-SNAPSHOT-tests.jar" | paste -sd ',' -`" \
- *     ./core/target/scala-2.12/spark-core_2.12-3.2.0-SNAPSHOT-tests.jar
+ *     ./core/target/spark-core_2.12-3.2.0-SNAPSHOT-tests.jar "*"
+ * }}}
+ *
+ * The example below runs, against SBT build Spark, all benchmarks
+ * under "org.apache.spark.sql.execution.datasources"
+ * {{{
+ *   bin/spark-submit --class \
+ *     org.apache.spark.benchmark.Benchmarks --jars \
+ *     "`find . -name "*3.2.0-SNAPSHOT-tests.jar" | paste -sd ',' -`" \
+ *     ./core/target/scala-2.12/spark-core_2.12-3.2.0-SNAPSHOT-tests.jar \
+ *     "org.apache.spark.sql.execution.datasources.*"
  * }}}
  */
 
@@ -63,8 +76,11 @@ object Benchmarks {
       lazy val runBenchmark = clazz.getMethod("main", classOf[Array[String]])
       // isAssignableFrom seems not working with the reflected class from Guava's
       // getTopLevelClassesRecursive.
+      val matcher = args.headOption.map(pattern =>
+        FileSystems.getDefault.getPathMatcher(s"glob:$pattern"))
       if (
           info.getName.endsWith("Benchmark") &&
+          matcher.forall(_.matches(Paths.get(info.getName))) &&
           Try(runBenchmark).isSuccess && // Does this has a main method?
           !Modifier.isAbstract(clazz.getModifiers) // Is this a regular class?
       ) {
@@ -80,6 +96,9 @@ object Benchmarks {
         }
         runBenchmark.invoke(null, Array(projDir))
       }
+
+      // Test
+      return
     }
   }
 }
