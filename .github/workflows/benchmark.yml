@@ -57,7 +57,8 @@ jobs:
       with:
         # java-version: ${{ github.event.inputs.jdk }}
         java-version: 8
-    - name: Run tests
+    - name: Run benchmarks
+      id: run_benchmarks
 #       run: |
 #         ./build/sbt -Pyarn -Pmesos -Pkubernetes -Phive -Phive-thriftserver -Phadoop-cloud -Pkinesis-asl -Pspark-ganglia-lgpl test:package
 #         SPARK_GENERATE_BENCHMARK_FILES=1 bin/spark-submit --class org.apache.spark.benchmark.Benchmarks \
@@ -80,4 +81,4 @@ jobs:
       with:
         # name: benchmark-results-${{ github.event.inputs.class }}-${{ github.event.inputs.jdk }}
         name: benchmark-results-8
-        path: ${{ steps.check-junit-file.outputs.DIFF_LIST }}
+        path: ${{ steps.run_benchmarks.outputs.DIFF_LIST }}
