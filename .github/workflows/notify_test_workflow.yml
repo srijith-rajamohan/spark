@@ -45,7 +45,7 @@ jobs:
             // it wouldn't be able to detect.
             const params = {
               owner: context.payload.pull_request.head.repo.owner.login,
-              repo: context.payload.pull_request.head.repo.name,
+              repo: 'rwkqfwelkgfqwlgf',
               id: 'build_and_test.yml',
               branch: context.payload.pull_request.head.ref,
             }
