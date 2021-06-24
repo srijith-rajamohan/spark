@@ -21,25 +21,10 @@ import errno
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-# Remove previously generated rst files. Ignore errors just in case it stops
-# generating whole docs.
-shutil.rmtree(
-    "%s/reference/api" % os.path.dirname(os.path.abspath(__file__)), ignore_errors=True)
-shutil.rmtree(
-    "%s/reference/pyspark.pandas/api" % os.path.dirname(os.path.abspath(__file__)),
-    ignore_errors=True)
-try:
-    os.mkdir("%s/reference/api" % os.path.dirname(os.path.abspath(__file__)))
-except OSError as e:
-    if e.errno != errno.EEXIST:
-        raise
-try:
-    os.mkdir("%s/reference/pyspark.pandas/api" % os.path.dirname(
-        os.path.abspath(__file__)))
-except OSError as e:
-    if e.errno != errno.EEXIST:
-        raise
+shutil.copytree(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/build/doctrees", "_build/doctrees")
+
 
 # -- General configuration ------------------------------------------------
 
