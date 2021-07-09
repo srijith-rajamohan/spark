@@ -48,8 +48,6 @@ dev/create-release/*final
 dev/create-release/*txt
 dev/pr-deps/
 dist/
-docs/_site/
-docs/api
 docs/.local_ruby_bundle
 sql/docs
 sql/site
@@ -68,8 +66,6 @@ project/plugins/target/
 python/lib/pyspark.zip
 python/.eggs/
 python/deps
-python/docs/_site/
-python/docs/source/reference/**/api/
 python/test_coverage/coverage_data
 python/test_coverage/htmlcov
 python/pyspark/python
