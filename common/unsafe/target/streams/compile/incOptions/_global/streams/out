@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /__w/spark/spark/common/unsafe/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UTF8String$LongWrapper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UTF8String.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HiveHasher.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UTF8String$IntWrapper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UTF8StringBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CalendarInterval.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BitSetMethods.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UnsafeMemoryAllocator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LongArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ByteArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ByteArrayMethods.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MemoryLocation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MemoryBlock.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Platform.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MemoryAllocator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DateTimeConstants.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HeapMemoryAllocator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Murmur3_x86_32.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UnsafeAlignedOffset.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /__w/spark/spark/common/unsafe/target/scala-2.12/classes.bak[0m

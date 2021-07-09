@@ -1,0 +1,36 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /__w/spark/spark/common/kvstore/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDB$PrefixCache.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVTypeInfo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVStoreView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVTypeInfo$MethodAccessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVIndex.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$InstanceList.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDB.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDBIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$InMemoryView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVStore.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVStoreSerializer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDBTypeInfo$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDBTypeInfo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDB$TypeAliases.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ArrayWrappers.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ArrayWrappers$ComparableIntArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$NaturalKeys.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ArrayWrappers$ComparableByteArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ArrayWrappers$ComparableLongArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ArrayWrappers$ComparableObjectArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$InMemoryLists.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVTypeInfo$Accessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UnsupportedStoreVersionException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVStoreIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$InstanceList$CountingRemoveIfForEach.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KVTypeInfo$FieldAccessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDB$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LevelDBTypeInfo$Index.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore$InMemoryIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InMemoryStore.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /__w/spark/spark/common/kvstore/target/scala-2.12/classes.bak[0m

@@ -1,0 +1,16 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /__w/spark/spark/common/sketch/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountMinSketch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Murmur3_x86_32.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountMinSketch$Version.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IncompatibleMergeException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Platform.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BloomFilter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CountMinSketchImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BitArray.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BloomFilter$Version.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BloomFilterImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /__w/spark/spark/common/sketch/target/scala-2.12/classes.bak[0m

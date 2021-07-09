@@ -1,0 +1,47 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/linalg/BLAS.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/linalg/Vectors.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/impl/Utils.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/linalg/Matrices.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/stat/distribution/MultivariateGaussian.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/linalg/Matrices.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/impl/Utils.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/stat/distribution/MultivariateGaussian.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/linalg/BLAS.scala, ${BASE}/mllib-local/src/main/scala/org/apache/spark/ml/linalg/Vectors.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 5 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /__w/spark/spark/mllib-local/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.5.5:compile for Scala 2.12.14[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 756c4555 for Scala compiler version 2.12.14[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-feature[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-explaintypes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-target:jvm-1.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xfatal-warnings[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Ywarn-unused:imports[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:silencer:globalFilters=.*deprecated.*[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-feature[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-explaintypes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-target:jvm-1.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xfatal-warnings[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Ywarn-unused:imports[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:silencer:globalFilters=.*deprecated.*[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:genjavadoc:out=/__w/spark/spark/mllib-local/target/java[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:genjavadoc:strictVisibility=true[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.12.14/0.17/genjavadoc-plugin_2.12.14-0.17.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/github/ghik/silencer-plugin_2.12.14/1.7.5/silencer-plugin_2.12.14-1.7.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xfatal-warnings[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Ywarn-unused-import[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:silencer:globalFilters=.*deprecated.*[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-target:jvm-1.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-sourcepath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/__w/spark/spark[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/root/.sbt/boot/scala-2.12.14/lib/scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/__w/spark/spark/mllib-local/target/scala-2.12/classes:/__w/spark/spark/common/tags/target/scala-2.12/spark-tags_2.12-3.3.0-SNAPSHOT.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/scalanlp/breeze_2.12/1.0/breeze_2.12-1.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/dev/ludovic/netlib/blas/2.2.0/blas-2.2.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.2.0/scala-collection-compat_2.12-2.2.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/github/ghik/silencer-lib_2.12.14/1.7.5/silencer-lib_2.12.14-1.7.5.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/scalanlp/breeze-macros_2.12/1.0/breeze-macros_2.12-1.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/github/wendykierp/JTransforms/3.1/JTransforms-3.1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/chuusai/shapeless_2.12/2.3.3/shapeless_2.12-2.3.3.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/spire_2.12/0.17.0-M1/spire_2.12-0.17.0-M1.jar:/root/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/pl/edu/icm/JLargeArrays/1.5/JLargeArrays-1.5.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/spire-macros_2.12/0.17.0-M1/spire-macros_2.12-0.17.0-M1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/spire-platform_2.12/0.17.0-M1/spire-platform_2.12-0.17.0-M1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/spire-util_2.12/0.17.0-M1/spire-util_2.12-0.17.0-M1.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/machinist_2.12/0.6.8/machinist_2.12-0.6.8.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/algebra_2.12/2.0.0-M2/algebra_2.12-2.0.0-M2.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/typelevel/cats-kernel_2.12/2.0.0-M4/cats-kernel_2.12-2.0.0-M4.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 13.463916647 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m

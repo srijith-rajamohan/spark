@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/Utils.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/IncompatibleMergeException.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/Murmur3_x86_32.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/CountMinSketchImpl.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/CountMinSketch.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/BloomFilter.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/BitArray.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/BloomFilterImpl.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/Platform.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/Utils.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/IncompatibleMergeException.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/CountMinSketchImpl.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/BitArray.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/Murmur3_x86_32.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/CountMinSketch.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/BloomFilter.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/BloomFilterImpl.java, ${BASE}/common/sketch/src/main/java/org/apache/spark/util/sketch/Platform.java), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 9 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Java sources to /__w/spark/spark/common/sketch/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 6.862636229 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.219127341 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 7.092904043 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m

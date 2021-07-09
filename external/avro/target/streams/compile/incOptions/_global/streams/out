@@ -1,0 +1,53 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /__w/spark/spark/external/avro/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDataToCatalyst.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroOutputWriter$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDeserializer$CatalystDataUpdater.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroWrite.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CatalystDataToAvro.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SchemaConverters$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroOutputWriter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroScanBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroOutputWriterFactory.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroPartitionReaderFactory$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UnsupportedAvroTypeException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDeserializer$RowUpdater.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroUtils$AvroSchemaHelper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroUtils$RowReader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroWrite$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CatalystDataToAvro$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroSerializer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SchemaConverters$SchemaType.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroPartitionReaderFactory.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroTable$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroScan.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	functions.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SparkAvroKeyRecordWriter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SchemaConverters$SchemaType$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDataSourceV2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroUtils$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SchemaConverters.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroOptions.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroFileFormat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDeserializer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDeserializer$ArrayDataUpdater.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroFileFormat$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IncompatibleSchemaException$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SparkAvroKeyOutputFormat$SparkRecordWriterFactory.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	functions$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroTable$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SparkAvroKeyOutputFormat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroTable.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroScan$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroPartitionReaderFactory$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroDataToCatalyst$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroFileFormat$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AvroOptions$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IncompatibleSchemaException.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /__w/spark/spark/external/avro/target/scala-2.12/classes.bak[0m

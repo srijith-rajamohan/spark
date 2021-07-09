@@ -1,0 +1,50 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/common/tags/src/main/scala/org/apache/spark/annotation/Since.scala, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Stable.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Experimental.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Private.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Unstable.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/DeveloperApi.java, ${BASE}/common/tags/src/main/scala/org/apache/spark/annotation/package.scala, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Evolving.java, ${BASE}/common/tags/src/main/scala/org/apache/spark/annotation/package-info.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/AlphaComponent.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Unstable.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Evolving.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Stable.java, ${BASE}/common/tags/src/main/scala/org/apache/spark/annotation/package.scala, ${BASE}/common/tags/src/main/scala/org/apache/spark/annotation/package-info.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Private.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/DeveloperApi.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/Experimental.java, ${BASE}/common/tags/src/main/java/org/apache/spark/annotation/AlphaComponent.java, ${BASE}/common/tags/src/main/scala/org/apache/spark/annotation/Since.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 10 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources and 8 Java sources to /__w/spark/spark/common/tags/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.5.5:compile for Scala 2.12.14[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 939de59 for Scala compiler version 2.12.14[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-feature[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-explaintypes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-target:jvm-1.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xfatal-warnings[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Ywarn-unused:imports[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:silencer:globalFilters=.*deprecated.*[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-unchecked[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-feature[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-explaintypes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-target:jvm-1.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xfatal-warnings[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Ywarn-unused:imports[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:silencer:globalFilters=.*deprecated.*[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:genjavadoc:out=/__w/spark/spark/common/tags/target/java[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:genjavadoc:strictVisibility=true[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.12.14/0.17/genjavadoc-plugin_2.12.14-0.17.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/github/ghik/silencer-plugin_2.12.14/1.7.5/silencer-plugin_2.12.14-1.7.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Xfatal-warnings[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-deprecation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-Ywarn-unused-import[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-P:silencer:globalFilters=.*deprecated.*[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-target:jvm-1.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-sourcepath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/__w/spark/spark[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/root/.sbt/boot/scala-2.12.14/lib/scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/__w/spark/spark/common/tags/target/scala-2.12/classes:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.2.0/scala-collection-compat_2.12-2.2.0.jar:/root/.cache/coursier/v1/https/maven-central.storage-download.googleapis.com/maven2/com/github/ghik/silencer-lib_2.12.14/1.7.5/silencer-lib_2.12.14-1.7.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.600863288 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 2.330219729 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.664662572 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 3.042226313 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m

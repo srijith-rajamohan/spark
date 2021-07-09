@@ -1,0 +1,51 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /__w/spark/spark/external/kafka-0-10/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CanCommitOffsets.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HasOffsetRanges.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DirectKafkaInputDStream$DirectKafkaInputDStreamCheckpointData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LocationStrategies.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OffsetRange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Assign.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LocationStrategy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DirectKafkaInputDStream$DirectKafkaRateController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PreferBrokers.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CompactedKafkaRDDIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PreferFixed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LocationStrategies$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CacheKey$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PerPartitionConfig.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DefaultPerPartitionConfig.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConsumerStrategies.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer$NonCachedKafkaDataConsumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InternalKafkaConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PreferConsistent.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaRDD.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Subscribe$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer$CachedKafkaDataConsumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DirectKafkaInputDStream.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SubscribePattern.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SubscribePattern$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer$CachedKafkaDataConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Subscribe.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PreferFixed.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer$NonCachedKafkaDataConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PreferConsistent$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaRDDPartition.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConsumerStrategy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CacheKey.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	InternalKafkaConsumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PreferBrokers$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Assign$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDataConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	OffsetRange.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ConsumerStrategies$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaRDDIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /__w/spark/spark/external/kafka-0-10/target/scala-2.12/classes.bak[0m

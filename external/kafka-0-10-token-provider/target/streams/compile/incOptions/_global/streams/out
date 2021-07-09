@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /__w/spark/spark/external/kafka-0-10-token-provider/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaDelegationTokenProvider.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaRedactionUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaConfigUpdater$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaConfigUpdater.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenSparkConf.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenClusterConf.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaRedactionUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenUtil$KafkaDelegationTokenIdentifier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenSparkConf$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenClusterConf$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaTokenUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /__w/spark/spark/external/kafka-0-10-token-provider/target/scala-2.12/classes.bak[0m

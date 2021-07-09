@@ -1,0 +1,9 @@
+[0m[[0m[33mwarn[0m] [0m[0m/__w/spark/spark/sql/catalyst/src/main/java/org/apache/spark/sql/connector/catalog/SupportsAtomicPartitionManagement.java:55:1:  [unchecked] unchecked method invocation: method createPartitions in interface SupportsAtomicPartitionManagement is applied to given types[0m
+[0m[[0m[33mwarn[0m] [0m[0m      createPartitions(new InternalRow[]{ident}, new Map[]{properties});[0m
+[0m[[0m[33mwarn[0m] [0m[0m                      ^  required: InternalRow[],Map<String,String>[][0m
+[0m[[0m[33mwarn[0m] [0m[0m  found: InternalRow[],Map[][0m
+[0m[[0m[33mwarn[0m] [0m[0m/__w/spark/spark/sql/catalyst/src/main/java/org/apache/spark/sql/connector/catalog/SupportsAtomicPartitionManagement.java:55:1:  [unchecked] unchecked conversion[0m
+[0m[[0m[33mwarn[0m] [0m[0m      createPartitions(new InternalRow[]{ident}, new Map[]{properties});[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^  required: Map<String,String>[][0m
+[0m[[0m[33mwarn[0m] [0m[0m  found:    Map[][0m
+[0m[[0m[33mwarn[0m] [0m[0m2 warnings[0m
