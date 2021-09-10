@@ -35,7 +35,7 @@
     <script src="_static/copybutton.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Getting Started" href="getting_started/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,7 +79,7 @@
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="user_guide/index.html">
-  User Guide
+  PySpark User Guide
  </a>
 </li>
 
@@ -193,14 +193,14 @@ Spark applications using Python APIs, but also provides the PySpark shell for
 interactively analyzing your data in a distributed environment. PySpark supports most
 of Spark’s features such as Spark SQL, DataFrame, Streaming, MLlib
 (Machine Learning) and Spark Core.</p>
-<img alt="PySpark Components" src="_images/pyspark-components.png" />
+<img alt="PySpark Components" src="_images/SparkComponents.png" />
 <div class="section" id="data-processing">
 <h2>Data Processing<a class="headerlink" href="#data-processing" title="Permalink to this headline">¶</a></h2>
-<p><strong>Spark SQL and DataFrame</strong></p>
+<p><a class="reference external" href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL and DataFrame</a></p>
 <p>Spark SQL is a Spark module, similar to SQL, that can be used for structured data processing. It provides
 a programming abstraction called DataFrame and can also act as distributed
 SQL query engine.</p>
-<p><strong>pandas API on Spark</strong></p>
+<p><a class="reference external" href="https://koalas.readthedocs.io/en/latest/">pandas API on Spark</a></p>
 <p>The pandas API on Spark allows you to scale your pandas workload out.
 With this package, you can:</p>
 <ul class="simple">
@@ -208,14 +208,14 @@ With this package, you can:</p>
 <li><p>Have a single codebase that works both with pandas (tests, smaller datasets) and with Spark (distributed datasets).</p></li>
 <li><p>Switch to pandas API and PySpark API contexts easily without any overhead.</p></li>
 </ul>
-<p><strong>Streaming</strong></p>
+<p><a class="reference external" href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Streaming</a></p>
 <p>Running on top of Spark, the streaming feature in Apache Spark enables powerful
 interactive and analytical applications across both streaming and historical data,
 while inheriting Spark’s ease of use and fault tolerance characteristics.</p>
 </div>
 <div class="section" id="machine-learning">
 <h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h2>
-<p><strong>MLlib</strong></p>
+<p><a class="reference external" href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a></p>
 <p>Built on top of Spark, MLlib is a scalable machine learning library that provides
 a uniform set of high-level APIs that help users create and tune practical machine
 learning pipelines.</p>

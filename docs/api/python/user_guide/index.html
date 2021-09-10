@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>User Guide &#8212; PySpark master documentation</title>
+    <title>PySpark User Guide &#8212; PySpark master documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -35,9 +35,9 @@
     <script src="../_static/copybutton.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Package Management" href="python_packaging.html" />
+    <link rel="next" title="API Reference" href="../reference/index.html" />
     <link rel="prev" title="Quickstart: Pandas API on Spark" href="../getting_started/quickstart_ps.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -80,7 +80,7 @@
 
 <li class="toctree-l1 current active nav-item">
  <a class="current reference internal nav-link" href="#">
-  User Guide
+  PySpark User Guide
  </a>
 </li>
 
@@ -131,83 +131,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="python_packaging.html">
-   Python Package Management
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="sql/index.html">
-   Spark SQL
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="sql/arrow_pandas.html">
-     Apache Arrow in PySpark
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="pandas_on_spark/index.html">
-   Pandas API on Spark
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/options.html">
-     Options and settings
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/pandas_pyspark.html">
-     From/to pandas and PySpark DataFrames
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/transform_apply.html">
-     Transform and apply a function
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/types.html">
-     Type Support in Pandas API on Spark
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/typehints.html">
-     Type Hints in Pandas API on Spark
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/from_to_dbms.html">
-     From/to other DBMSes
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/best_practices.html">
-     Best Practices
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pandas_on_spark/faq.html">
-     FAQ
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
+    
   </div>
 </nav>
             </div>
@@ -220,9 +144,41 @@
               
               <div class="toc-item">
                 
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   PySpark User Guide
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation-and-the-spark-internals">
+     Installation and the Spark Internals
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-access-apis">
+     Data Access APIs
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#high-level-apis">
+     High-level APIs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spark-user-guide-all-languages">
+   Spark User Guide (All languages)
+  </a>
+ </li>
+</ul>
+
 </nav>
               </div>
               
@@ -242,44 +198,57 @@
               
               <div>
                 
-  <div class="section" id="user-guide">
-<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
-<p>There are basic guides shared with other languages in Programming Guides
-at <a class="reference external" href="https://spark.apache.org/docs/latest/index.html#where-to-go-from-here">the Spark documentation</a> as below:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">RDD Programming Guide</a></p></li>
-<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL, DataFrames and Datasets Guide</a></p></li>
-<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming Programming Guide</a></p></li>
-<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">Spark Streaming Programming Guide</a></p></li>
-<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/ml-guide.html">Machine Learning Library (MLlib) Guide</a></p></li>
-</ul>
-<p>PySpark specific user guide is as follows:</p>
-<div class="toctree-wrapper compound">
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="pyspark-user-guide">
+<h1>PySpark User Guide<a class="headerlink" href="#pyspark-user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation-and-the-spark-internals">
+<h2>Installation and the Spark Internals<a class="headerlink" href="#installation-and-the-spark-internals" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="python_packaging.html">Python Package Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="python_packaging.html#using-pyspark-native-features">Using PySpark Native Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="python_packaging.html#using-conda">Using Conda</a></li>
-<li class="toctree-l2"><a class="reference internal" href="python_packaging.html#using-virtualenv">Using Virtualenv</a></li>
-<li class="toctree-l2"><a class="reference internal" href="python_packaging.html#using-pex">Using PEX</a></li>
+<li><p>Installing packages: <a class="reference external" href="python_packaging.html">Python package management</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="python_packaging.html#using-pyspark-native-features">Using the PySpark Native Features</a></p></li>
+<li><p><a class="reference external" href="python_packaging.html#using-conda">Using Conda</a></p></li>
+<li><p><a class="reference external" href="python_packaging.html#using-virtualenv">Using Virtualenv</a></p></li>
+<li><p><a class="reference external" href="python_packaging.html#using-pex">Using PEX</a></p></li>
 </ul>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sql/index.html">Spark SQL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sql/arrow_pandas.html">Apache Arrow in PySpark</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="pandas_on_spark/index.html">Pandas API on Spark</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/options.html">Options and settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/pandas_pyspark.html">From/to pandas and PySpark DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/transform_apply.html">Transform and apply a function</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/types.html">Type Support in Pandas API on Spark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/typehints.html">Type Hints in Pandas API on Spark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/from_to_dbms.html">From/to other DBMSes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/best_practices.html">Best Practices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pandas_on_spark/faq.html">FAQ</a></li>
-</ul>
-</li>
+<li><p>The Spark internals:  <a class="reference external" href="sql/arrow_pandas.html">Spark Core + SQL Engine</a></p></li>
 </ul>
 </div>
+<div class="section" id="data-access-apis">
+<h2>Data Access APIs<a class="headerlink" href="#data-access-apis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="../getting_started/quickstart_df.html">PySpark DataFrame</a></p></li>
+<li><p><a class="reference external" href="../getting_started/quickstart_df.html#Working-with-SQL">Executing SQL in PySpark</a></p></li>
+<li><p><a class="reference external" href="../getting_started/quickstart_ps.html">The pandas API on PySpark</a></p></li>
+</ul>
+</div>
+<div class="section" id="high-level-apis">
+<h2>High-level APIs<a class="headerlink" href="#high-level-apis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Streaming in PySpark</a></p></li>
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/ml-guide.html">Machine Learning in PySpark</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="spark-user-guide-all-languages">
+<h1>Spark User Guide (All languages)<a class="headerlink" href="#spark-user-guide-all-languages" title="Permalink to this headline">¶</a></h1>
+<p>The following guides shared with other languages in the Programming Guides section
+at <a class="reference external" href="https://spark.apache.org/docs/latest/index.html#where-to-go-from-here">the Spark documentation</a> as listed below:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL, DataFrames and Datasets Guide</a></p></li>
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming Programming Guide</a></p></li>
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/ml-guide.html">Machine Learning Library (MLlib) Guide</a></p></li>
+<li><p><a class="reference external" href="https://koalas.readthedocs.io/en/latest/user_guide/index.html">pandas API on Spark Guide</a></p></li>
+</ul>
+<p>The following APIs are deprecated and no longer recommended for use:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">RDD Programming Guide</a></p></li>
+<li><p><a class="reference external" href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">Spark Streaming Programming Guide</a></p></li>
+</ul>
 </div>
 
 
@@ -289,7 +258,7 @@ at <a class="reference external" href="https://spark.apache.org/docs/latest/inde
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="../getting_started/quickstart_ps.html" title="previous page">Quickstart: Pandas API on Spark</a>
-    <a class='right-next' id="next-link" href="python_packaging.html" title="next page">Python Package Management</a>
+    <a class='right-next' id="next-link" href="../reference/index.html" title="next page">API Reference</a>
 
               </div>
               
