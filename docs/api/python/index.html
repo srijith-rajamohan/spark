@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>PySpark Documentation &#8212; PySpark master documentation</title>
+    <title>PySpark Documentation2 &#8212; PySpark master documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -150,18 +150,18 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-processing">
-   Data Processing
+  <a class="reference internal nav-link" href="#data-apis">
+   Data APIs
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#machine-learning">
-   Machine Learning
+  <a class="reference internal nav-link" href="#high-level-apis">
+   High-level APIs
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#spark-core">
-   Spark Core
+  <a class="reference internal nav-link" href="#spark-core-spark-sql-engine">
+   Spark Core + Spark SQL Engine
   </a>
  </li>
 </ul>
@@ -185,8 +185,8 @@
               
               <div>
                 
-  <div class="section" id="pyspark-documentation">
-<h1>PySpark Documentation<a class="headerlink" href="#pyspark-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pyspark-documentation2">
+<h1>PySpark Documentation2<a class="headerlink" href="#pyspark-documentation2" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/apache/spark/master?filepath=python%2Fdocs%2Fsource%2Fgetting_started%2Fquickstart_df.ipynb">Live Notebook</a> | <a class="reference external" href="https://github.com/apache/spark">GitHub</a> | <a class="reference external" href="https://issues.apache.org/jira/projects/SPARK/issues">Issues</a> | <a class="reference external" href="https://github.com/apache/spark/tree/master/examples/src/main/python">Examples</a> | <a class="reference external" href="https://spark.apache.org/community.html">Community</a></p>
 <p>PySpark is an interface for Apache Spark in Python. It not only allows you to write
 Spark applications using Python APIs, but also provides the PySpark shell for
@@ -194,8 +194,8 @@ interactively analyzing your data in a distributed environment. PySpark supports
 of Spark’s features such as Spark SQL, DataFrame, Streaming, MLlib
 (Machine Learning) and Spark Core.</p>
 <img alt="PySpark Components" src="_images/SparkComponents.png" />
-<div class="section" id="data-processing">
-<h2>Data Processing<a class="headerlink" href="#data-processing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-apis">
+<h2>Data APIs<a class="headerlink" href="#data-apis" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL and DataFrame</a></p>
 <p>Spark SQL is a Spark module, similar to SQL, that can be used for structured data processing. It provides
 a programming abstraction called DataFrame and can also act as distributed
@@ -208,20 +208,20 @@ With this package, you can:</p>
 <li><p>Have a single codebase that works both with pandas (tests, smaller datasets) and with Spark (distributed datasets).</p></li>
 <li><p>Switch to pandas API and PySpark API contexts easily without any overhead.</p></li>
 </ul>
+</div>
+<div class="section" id="high-level-apis">
+<h2>High-level APIs<a class="headerlink" href="#high-level-apis" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Streaming</a></p>
 <p>Running on top of Spark, the streaming feature in Apache Spark enables powerful
 interactive and analytical applications across both streaming and historical data,
 while inheriting Spark’s ease of use and fault tolerance characteristics.</p>
-</div>
-<div class="section" id="machine-learning">
-<h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://spark.apache.org/docs/latest/ml-guide.html">MLlib</a></p>
+<p><a class="reference external" href="https://spark.apache.org/docs/latest/ml-guide.html">Machine Learning (MLlib)</a></p>
 <p>Built on top of Spark, MLlib is a scalable machine learning library that provides
 a uniform set of high-level APIs that help users create and tune practical machine
 learning pipelines.</p>
 </div>
-<div class="section" id="spark-core">
-<h2>Spark Core<a class="headerlink" href="#spark-core" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spark-core-spark-sql-engine">
+<h2>Spark Core + Spark SQL Engine<a class="headerlink" href="#spark-core-spark-sql-engine" title="Permalink to this headline">¶</a></h2>
 <p>Spark Core is the underlying general execution engine for the Spark platform that all
 other functionality is built on top of. It provides an RDD (Resilient Distributed Dataset)
 and in-memory computing capabilities.</p>
