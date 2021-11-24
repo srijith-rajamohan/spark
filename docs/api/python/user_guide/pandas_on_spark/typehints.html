@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Type Hints in Pandas API on Spark &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -38,7 +39,10 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="../../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -179,7 +183,7 @@
               
               <div>
                 
-  <div class="section" id="type-hints-in-pandas-api-on-spark">
+  <section id="type-hints-in-pandas-api-on-spark">
 <h1>Type Hints in Pandas API on Spark<a class="headerlink" href="#type-hints-in-pandas-api-on-spark" title="Permalink to this headline">¶</a></h1>
 <p>Pandas API on Spark, by default, infers the schema by taking some top records from the output,
 in particular, when you use APIs that allow users to apply a function against pandas-on-Spark DataFrame
@@ -198,8 +202,8 @@ the time.</p>
 <p>The variadic generics support is experimental and unstable in pandas API on Spark.
 The way of typing can change between minor releases without a warning.
 See also <a class="reference external" href="https://www.python.org/dev/peps/pep-0646/">PEP 646</a> for variadic generics in Python.</p>
-</div>
-<div class="section" id="pandas-on-spark-dataframe-and-pandas-dataframe">
+</aside>
+<section id="pandas-on-spark-dataframe-and-pandas-dataframe">
 <h2>pandas-on-Spark DataFrame and Pandas DataFrame<a class="headerlink" href="#pandas-on-spark-dataframe-and-pandas-dataframe" title="Permalink to this headline">¶</a></h2>
 <p>In the early pandas-on-Spark version, it was introduced to specify a type hint in the function in order to use
 it as a Spark schema. As an example, you can specify the return type hint as below by using pandas-on-Spark
@@ -233,8 +237,8 @@ However, pandas API on Spark has to force to set the mismatched type hints.</p>
 </div>
 <p>Currently, both pandas API on Spark and pandas instances can be used to specify the type hints; however, pandas-on-Spark
 plans to move gradually towards using pandas instances only as the stability becomes proven.</p>
-</div>
-<div class="section" id="type-hinting-with-names">
+</section>
+<section id="type-hinting-with-names">
 <h2>Type Hinting with Names<a class="headerlink" href="#type-hinting-with-names" title="Permalink to this headline">¶</a></h2>
 <p>In pandas-on-Spark 1.0, the new style of type hinting was introduced to overcome the limitations in the existing type
 hinting especially for DataFrame. When you use a DataFrame as the return type hint, for example,
@@ -288,17 +292,16 @@ programmatically generate the return type and schema.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">psdf</span><span class="o">.</span><span class="n">pandas_on_spark</span><span class="o">.</span><span class="n">apply_batch</span><span class="p">(</span><span class="n">transform</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
@@ -306,20 +309,19 @@ programmatically generate the return type and schema.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

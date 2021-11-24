@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>LDAModel &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="BinaryClassificationMetrics" href="pyspark.mllib.evaluation.BinaryClassificationMetrics.html" />
     <link rel="prev" title="LDA" href="pyspark.mllib.clustering.LDA.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="ldamodel">
+  <section id="ldamodel">
 <h1>LDAModel<a class="headerlink" href="#ldamodel" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.clustering.LDAModel">
@@ -9379,14 +9383,15 @@ Terminology</p>
 <p><span class="versionmodified added">New in version 1.5.0.</span></p>
 </div>
 <p class="rubric">Notes</p>
-<p>See the original LDA paper (journal version) <a class="reference internal" href="#r870f3a018ef8-1" id="id1">[1]</a></p>
-<dl class="citation">
-<dt class="label" id="r870f3a018ef8-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Blei, D. et al. “Latent Dirichlet Allocation.”
+<p>See the original LDA paper (journal version) <a class="reference internal" href="#r870f3a018ef8-1" id="citation-reference-1">[1]</a></p>
+<div role="list" class="citation-list">
+<div class="citation" id="r870f3a018ef8-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>Blei, D. et al. “Latent Dirichlet Allocation.”
 J. Mach. Learn. Res. 3 (2003): 993-1022.
 <a class="reference external" href="https://www.jmlr.org/papers/v3/blei03a">https://www.jmlr.org/papers/v3/blei03a</a></p>
-</dd>
-</dl>
+</div>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyspark.mllib.linalg</span> <span class="kn">import</span> <span class="n">Vectors</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy.testing</span> <span class="kn">import</span> <span class="n">assert_almost_equal</span><span class="p">,</span> <span class="n">assert_equal</span>
@@ -9425,10 +9430,6 @@ J. Mach. Learn. Res. 3 (2003): 993-1022.
 </div>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.clustering.LDAModel.call" title="pyspark.mllib.clustering.LDAModel.call"><code class="xref py py-obj docutils literal notranslate"><span class="pre">call</span></code></a>(name, *a)</p></td>
 <td><p>Call method of java_model</p></td>
@@ -9467,16 +9468,16 @@ J. Mach. Learn. Res. 3 (2003): 993-1022.
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If vocabSize and k are large, this can return a large object!</p>
-</div>
+</aside>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>maxTermsPerTopic</strong><span class="classifier">int, optional</span></dt><dd><p>Maximum number of terms to collect for each topic.
 (default: vocabulary size)</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>list</dt><dd><p>Array over topics. Each topic is represented as a pair of
 matching arrays: (term indices, term weights in topic).
@@ -9495,7 +9496,7 @@ Each topic’s terms are sorted in order of decreasing weight.</p>
 <p><span class="versionmodified added">New in version 1.5.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>sc</strong><span class="classifier"><a class="reference internal" href="pyspark.SparkContext.html#pyspark.SparkContext" title="pyspark.SparkContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.SparkContext</span></code></a></span></dt><dd></dd>
 <dt><strong>path</strong><span class="classifier">str</span></dt><dd><p>Path to where the model is stored.</p>
@@ -9534,18 +9535,29 @@ Each topic’s terms are sorted in order of decreasing weight.</p>
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.clustering.LDA.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">LDA</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.evaluation.BinaryClassificationMetrics.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">BinaryClassificationMetrics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.clustering.LDA.html" title="previous page">LDA</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.evaluation.BinaryClassificationMetrics.html" title="next page">BinaryClassificationMetrics</a>
-
-              </div>
               
           </main>
           
@@ -9553,20 +9565,19 @@ Each topic’s terms are sorted in order of decreasing weight.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

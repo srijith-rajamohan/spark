@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Python Package Management &#8212; PySpark master documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -38,7 +39,10 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -189,7 +193,7 @@
               
               <div>
                 
-  <div class="section" id="python-package-management">
+  <section id="python-package-management">
 <h1>Python Package Management<a class="headerlink" href="#python-package-management" title="Permalink to this headline">¶</a></h1>
 <p>When you want to run your PySpark application on a cluster such as YARN, Kubernetes, Mesos, etc., you need to make
 sure that your code and all used libraries are available on the executors.</p>
@@ -224,7 +228,7 @@ on the cluster. Otherwise you may get errors such as <code class="docutils liter
 <li><p>Using Virtualenv</p></li>
 <li><p>Using PEX</p></li>
 </ul>
-<div class="section" id="using-pyspark-native-features">
+<section id="using-pyspark-native-features">
 <h2>Using PySpark Native Features<a class="headerlink" href="#using-pyspark-native-features" title="Permalink to this headline">¶</a></h2>
 <p>PySpark allows to upload Python files (<code class="docutils literal notranslate"><span class="pre">.py</span></code>), zipped Python packages (<code class="docutils literal notranslate"><span class="pre">.zip</span></code>), and Egg files (<code class="docutils literal notranslate"><span class="pre">.egg</span></code>)
 to the executors by:</p>
@@ -237,8 +241,8 @@ to the executors by:</p>
 packages and upload them. Using <a class="reference internal" href="../reference/api/pyspark.SparkContext.addPyFile.html#pyspark.SparkContext.addPyFile" title="pyspark.SparkContext.addPyFile"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pyspark.SparkContext.addPyFile()</span></code></a> allows to upload code even after having started your job.</p>
 <p>However, it does not allow to add packages built as <a class="reference external" href="https://www.python.org/dev/peps/pep-0427/">Wheels</a> and therefore
 does not allow to include dependencies with native code.</p>
-</div>
-<div class="section" id="using-conda">
+</section>
+<section id="using-conda">
 <h2>Using Conda<a class="headerlink" href="#using-conda" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://docs.conda.io/en/latest/">Conda</a> is one of the most widely-used Python package management systems. PySpark users can directly
 use a Conda environment to ship their third-party Python packages by leveraging
@@ -279,8 +283,8 @@ spark-submit --archives pyspark_conda_env.tar.gz#environment app.py
 pyspark --archives pyspark_conda_env.tar.gz#environment
 </pre></div>
 </div>
-</div>
-<div class="section" id="using-virtualenv">
+</section>
+<section id="using-virtualenv">
 <h2>Using Virtualenv<a class="headerlink" href="#using-virtualenv" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://virtualenv.pypa.io/en/latest/">Virtualenv</a>  is a Python tool to create isolated Python environments.
 Since Python 3.3, a subset of its features has been integrated into Python as a standard library under
@@ -324,8 +328,8 @@ main<span class="o">(</span>spark<span class="o">)</span>
 pyspark --archives pyspark_venv.tar.gz#environment
 </pre></div>
 </div>
-</div>
-<div class="section" id="using-pex">
+</section>
+<section id="using-pex">
 <h2>Using PEX<a class="headerlink" href="#using-pex" title="Permalink to this headline">¶</a></h2>
 <p>PySpark can also use <a class="reference external" href="https://github.com/pantsbuild/pex">PEX</a> to ship the Python packages
 together. PEX is a tool that creates a self-contained Python environment. This is similar
@@ -375,17 +379,16 @@ pyspark --files pyspark_pex_env.pex
 can be found <a class="reference external" href="https://github.com/criteo/cluster-pack/blob/master/examples/spark-with-S3/README.md">here</a>
 - it uses cluster-pack, a library on top of PEX that automatizes the the intermediate step of having
 to create &amp; upload the PEX manually.</p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
@@ -393,20 +396,19 @@ to create &amp; upload the PEX manually.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

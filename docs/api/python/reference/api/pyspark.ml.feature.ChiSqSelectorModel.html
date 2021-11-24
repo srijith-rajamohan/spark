@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>ChiSqSelectorModel &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="CountVectorizer" href="pyspark.ml.feature.CountVectorizer.html" />
     <link rel="prev" title="ChiSqSelector" href="pyspark.ml.feature.ChiSqSelector.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="chisqselectormodel">
+  <section id="chisqselectormodel">
 <h1>ChiSqSelectorModel<a class="headerlink" href="#chisqselectormodel" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.ml.feature.ChiSqSelectorModel">
@@ -9373,10 +9377,6 @@
 </div>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.ml.feature.ChiSqSelectorModel.clear" title="pyspark.ml.feature.ChiSqSelectorModel.clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code></a>(param)</p></td>
 <td><p>Clears a param from the param map if it has been explicitly set.</p></td>
@@ -9466,10 +9466,6 @@
 </table>
 <p class="rubric">Attributes</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.ml.feature.ChiSqSelectorModel.fdr" title="pyspark.ml.feature.ChiSqSelectorModel.fdr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fdr</span></code></a></p></td>
 <td><p></p></td>
@@ -9522,13 +9518,13 @@ then make a copy of the companion Java pipeline component with
 extra params. So both the Python wrapper and the Java pipeline
 component get copied.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>extra</strong><span class="classifier">dict, optional</span></dt><dd><p>Extra parameters to copy to the new instance</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><code class="xref py py-class docutils literal notranslate"><span class="pre">JavaParams</span></code></dt><dd><p>Copy of this instance</p>
 </dd>
@@ -9560,13 +9556,13 @@ a flat param map, where the latter value is used if there exist
 conflicts, i.e., with ordering: default param values &lt;
 user-supplied values &lt; extra.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>extra</strong><span class="classifier">dict, optional</span></dt><dd><p>extra param values</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>dict</dt><dd><p>merged param map</p>
 </dd>
@@ -9736,7 +9732,7 @@ a default value.</p>
 <p><span class="versionmodified added">New in version 1.3.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>dataset</strong><span class="classifier"><a class="reference internal" href="pyspark.sql.DataFrame.html#pyspark.sql.DataFrame" title="pyspark.sql.DataFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.sql.DataFrame</span></code></a></span></dt><dd><p>input dataset</p>
 </dd>
@@ -9744,7 +9740,7 @@ a default value.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.sql.DataFrame.html#pyspark.sql.DataFrame" title="pyspark.sql.DataFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.sql.DataFrame</span></code></a></dt><dd><p>transformed dataset</p>
 </dd>
@@ -9824,18 +9820,29 @@ uses <code class="xref py py-func docutils literal notranslate"><span class="pre
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.ml.feature.ChiSqSelector.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">ChiSqSelector</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.ml.feature.CountVectorizer.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">CountVectorizer</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.ml.feature.ChiSqSelector.html" title="previous page">ChiSqSelector</a>
-    <a class='right-next' id="next-link" href="pyspark.ml.feature.CountVectorizer.html" title="next page">CountVectorizer</a>
-
-              </div>
               
           </main>
           
@@ -9843,20 +9850,19 @@ uses <code class="xref py py-func docutils literal notranslate"><span class="pre
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

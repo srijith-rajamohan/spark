@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>PrefixSpan &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="PrefixSpanModel" href="pyspark.mllib.fpm.PrefixSpanModel.html" />
     <link rel="prev" title="FPGrowthModel" href="pyspark.mllib.fpm.FPGrowthModel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,31 +9366,28 @@
               
               <div>
                 
-  <div class="section" id="prefixspan">
+  <section id="prefixspan">
 <h1>PrefixSpan<a class="headerlink" href="#prefixspan" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.fpm.PrefixSpan">
 <em class="property">class </em><code class="sig-prename descclassname">pyspark.mllib.fpm.</code><code class="sig-name descname">PrefixSpan</code><a class="reference internal" href="../../_modules/pyspark/mllib/fpm.html#PrefixSpan"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyspark.mllib.fpm.PrefixSpan" title="Permalink to this definition">¶</a></dt>
 <dd><p>A parallel PrefixSpan algorithm to mine frequent sequential patterns.
-The PrefixSpan algorithm is described in Jian Pei et al (2001) <a class="reference internal" href="#r01c8b11dfeac-1" id="id1">[1]</a></p>
+The PrefixSpan algorithm is described in Jian Pei et al (2001) <a class="reference internal" href="#r01c8b11dfeac-1" id="citation-reference-1">[1]</a></p>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 1.6.0.</span></p>
 </div>
-<dl class="citation">
-<dt class="label" id="r01c8b11dfeac-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Jian Pei et al.,
+<div role="list" class="citation-list">
+<div class="citation" id="r01c8b11dfeac-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>Jian Pei et al.,
 “PrefixSpan,: mining sequential patterns efficiently by prefix-projected pattern growth,”
 Proceedings 17th International Conference on Data Engineering, Heidelberg,
 Germany, 2001, pp. 215-224,
 doi: <a class="reference external" href="https://doi.org/10.1109/ICDE.2001.914830">https://doi.org/10.1109/ICDE.2001.914830</a></p>
-</dd>
-</dl>
+</div>
+</div>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.fpm.PrefixSpan.train" title="pyspark.mllib.fpm.PrefixSpan.train"><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code></a>(data[, minSupport, maxPatternLength, …])</p></td>
 <td><p>Finds the complete set of frequent sequential patterns in the input sequences of itemsets.</p></td>
@@ -9403,7 +9404,7 @@ input sequences of itemsets.</p>
 <p><span class="versionmodified added">New in version 1.6.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>data</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>The input data set, each element contains a sequence of
 itemsets.</p>
@@ -9430,18 +9431,29 @@ another iteration of distributed prefix growth is run.
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.fpm.FPGrowthModel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">FPGrowthModel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.fpm.PrefixSpanModel.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PrefixSpanModel</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.fpm.FPGrowthModel.html" title="previous page">FPGrowthModel</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.fpm.PrefixSpanModel.html" title="next page">PrefixSpanModel</a>
-
-              </div>
               
           </main>
           
@@ -9449,20 +9461,19 @@ another iteration of distributed prefix growth is run.
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

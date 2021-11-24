@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Type Support in Pandas API on Spark &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -38,7 +39,10 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="../../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -184,10 +188,10 @@
               
               <div>
                 
-  <div class="section" id="type-support-in-pandas-api-on-spark">
+  <section id="type-support-in-pandas-api-on-spark">
 <h1>Type Support in Pandas API on Spark<a class="headerlink" href="#type-support-in-pandas-api-on-spark" title="Permalink to this headline">¶</a></h1>
 <p>In this chapter, we will briefly show you how data types change when converting pandas-on-Spark DataFrame from/to PySpark DataFrame or pandas DataFrame.</p>
-<div class="section" id="type-casting-between-pyspark-and-pandas-api-on-spark">
+<section id="type-casting-between-pyspark-and-pandas-api-on-spark">
 <h2>Type casting between PySpark and pandas API on Spark<a class="headerlink" href="#type-casting-between-pyspark-and-pandas-api-on-spark" title="Permalink to this headline">¶</a></h2>
 <p>When converting a pandas-on-Spark DataFrame from/to PySpark DataFrame, the data types are automatically casted to the appropriate type.</p>
 <p>The example below shows how data types are casted from PySpark DataFrame to pandas-on-Spark DataFrame.</p>
@@ -252,8 +256,8 @@
 <span class="n">DataFrame</span><span class="p">[</span><span class="n">int8</span><span class="p">:</span> <span class="n">tinyint</span><span class="p">,</span> <span class="nb">bool</span><span class="p">:</span> <span class="n">boolean</span><span class="p">,</span> <span class="n">float32</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">float64</span><span class="p">:</span> <span class="n">double</span><span class="p">,</span> <span class="n">int32</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">int64</span><span class="p">:</span> <span class="n">bigint</span><span class="p">,</span> <span class="n">int16</span><span class="p">:</span> <span class="n">smallint</span><span class="p">,</span> <span class="n">datetime</span><span class="p">:</span> <span class="n">timestamp</span><span class="p">,</span> <span class="n">object_string</span><span class="p">:</span> <span class="n">string</span><span class="p">,</span> <span class="n">object_decimal</span><span class="p">:</span> <span class="n">decimal</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">object_date</span><span class="p">:</span> <span class="n">date</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="type-casting-between-pandas-and-pandas-api-on-spark">
+</section>
+<section id="type-casting-between-pandas-and-pandas-api-on-spark">
 <h2>Type casting between pandas and pandas API on Spark<a class="headerlink" href="#type-casting-between-pandas-and-pandas-api-on-spark" title="Permalink to this headline">¶</a></h2>
 <p>When converting pandas-on-Spark DataFrame to pandas DataFrame, and the data types are basically same as pandas.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert pandas-on-Spark DataFrame to pandas DataFrame</span>
@@ -298,15 +302,11 @@
 <li><p>pd.BooleanDtype</p></li>
 <li><p>pd.StringDtype</p></li>
 </ul>
-</div>
-<div class="section" id="internal-type-mapping">
+</section>
+<section id="internal-type-mapping">
 <h2>Internal type mapping<a class="headerlink" href="#internal-type-mapping" title="Permalink to this headline">¶</a></h2>
 <p>The table below shows which NumPy data types are matched to which PySpark data types internally in pandas API on Spark.</p>
 <table class="table">
-<colgroup>
-<col style="width: 36%" />
-<col style="width: 64%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>NumPy</p></th>
 <th class="head"><p>PySpark</p></th>
@@ -368,10 +368,6 @@
 </table>
 <p>The table below shows which Python data types are matched to which PySpark data types internally in pandas API on Spark.</p>
 <table class="table">
-<colgroup>
-<col style="width: 47%" />
-<col style="width: 53%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Python</p></th>
 <th class="head"><p>PySpark</p></th>
@@ -446,18 +442,17 @@
 <span class="gr">TypeError</span>: <span class="n">an integer is required (got type str)</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</aside>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
@@ -465,20 +460,19 @@
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

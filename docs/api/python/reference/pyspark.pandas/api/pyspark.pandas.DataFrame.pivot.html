@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.DataFrame.pivot &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.DataFrame.sort_index" href="pyspark.pandas.DataFrame.sort_index.html" />
     <link rel="prev" title="pyspark.pandas.DataFrame.pivot_table" href="pyspark.pandas.DataFrame.pivot_table.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-dataframe-pivot">
+  <section id="pyspark-pandas-dataframe-pivot">
 <h1>pyspark.pandas.DataFrame.pivot<a class="headerlink" href="#pyspark-pandas-dataframe-pivot" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.DataFrame.pivot">
@@ -9373,7 +9377,7 @@ unique values from specified <cite>index</cite> / <cite>columns</cite> to form a
 resulting DataFrame. This function does not support data
 aggregation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>index</strong><span class="classifier">string, optional</span></dt><dd><p>Column to use to make new frame’s index. If None, uses
 existing index.</p>
@@ -9384,7 +9388,7 @@ existing index.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>DataFrame</dt><dd><p>Returns reshaped DataFrame.</p>
 </dd>
@@ -9397,7 +9401,7 @@ existing index.</p>
 <dt><a class="reference internal" href="pyspark.pandas.DataFrame.pivot_table.html#pyspark.pandas.DataFrame.pivot_table" title="pyspark.pandas.DataFrame.pivot_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.pivot_table</span></code></a></dt><dd><p>Generalization of pivot that can handle duplicate values for one index/column pair.</p>
 </dd>
 </dl>
-</div>
+</aside>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span>
 <span class="gp">... </span>                           <span class="s1">&#39;two&#39;</span><span class="p">],</span>
@@ -9481,18 +9485,29 @@ fast when processing large data.</p>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.pivot_table.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.DataFrame.pivot_table</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.sort_index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.DataFrame.sort_index</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.pivot_table.html" title="previous page">pyspark.pandas.DataFrame.pivot_table</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.sort_index.html" title="next page">pyspark.pandas.DataFrame.sort_index</a>
-
-              </div>
               
           </main>
           
@@ -9500,20 +9515,19 @@ fast when processing large data.</p>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

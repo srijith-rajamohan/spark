@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.read_sql &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="General functions" href="../general_functions.html" />
     <link rel="prev" title="pyspark.pandas.read_sql_query" href="pyspark.pandas.read_sql_query.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-read-sql">
+  <section id="pyspark-pandas-read-sql">
 <h1>pyspark.pandas.read_sql<a class="headerlink" href="#pyspark-pandas-read-sql" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="pyspark.pandas.read_sql">
@@ -9377,9 +9381,9 @@ have more specific notes about their functionality not listed here.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Some database might hit the issue of Spark: SPARK-27596</p>
-</div>
+</aside>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>sql</strong><span class="classifier">string</span></dt><dd><p>SQL query to be executed or a table name.</p>
 </dd>
@@ -9387,7 +9391,7 @@ have more specific notes about their functionality not listed here.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The URI must be JDBC URI instead of Python’s database URI.</p>
-</div>
+</aside>
 </dd>
 <dt><strong>index_col</strong><span class="classifier">string or list of strings, optional, default: None</span></dt><dd><p>Column(s) to set as index(MultiIndex).</p>
 </dd>
@@ -9398,7 +9402,7 @@ a table).</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>DataFrame</dt><dd></dd>
 </dl>
@@ -9412,7 +9416,7 @@ a table).</p>
 <dt><a class="reference internal" href="pyspark.pandas.read_sql_query.html#pyspark.pandas.read_sql_query" title="pyspark.pandas.read_sql_query"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_sql_query</span></code></a></dt><dd><p>Read SQL query into a DataFrame.</p>
 </dd>
 </dl>
-</div>
+</aside>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ps</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s1">&#39;table_name&#39;</span><span class="p">,</span> <span class="s1">&#39;jdbc:postgresql:db_name&#39;</span><span class="p">)</span>  
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ps</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM table_name&#39;</span><span class="p">,</span> <span class="s1">&#39;jdbc:postgresql:db_name&#39;</span><span class="p">)</span>  
@@ -9420,18 +9424,29 @@ a table).</p>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.read_sql_query.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.read_sql_query</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../general_functions.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">General functions</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.read_sql_query.html" title="previous page">pyspark.pandas.read_sql_query</a>
-    <a class='right-next' id="next-link" href="../general_functions.html" title="next page">General functions</a>
-
-              </div>
               
           </main>
           
@@ -9439,20 +9454,19 @@ a table).</p>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

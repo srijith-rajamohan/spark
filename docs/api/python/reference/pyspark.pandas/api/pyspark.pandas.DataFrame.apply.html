@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.DataFrame.apply &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.DataFrame.applymap" href="pyspark.pandas.DataFrame.applymap.html" />
     <link rel="prev" title="pyspark.pandas.DataFrame.dot" href="pyspark.pandas.DataFrame.dot.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-dataframe-apply">
+  <section id="pyspark-pandas-dataframe-apply">
 <h1>pyspark.pandas.DataFrame.apply<a class="headerlink" href="#pyspark-pandas-dataframe-apply" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.DataFrame.apply">
@@ -9394,7 +9398,7 @@ such as global aggregations are impossible. See the example below.</p>
 <span class="go">dtype: int32</span>
 </pre></div>
 </div>
-</div>
+</aside>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>this API executes the function once to infer the type which is
@@ -9432,9 +9436,9 @@ because the type hint cannot express the index type at this moment. Use
 <p>When the given function has the return type annotated, the original index of the
 DataFrame will be lost and then a default index will be attached to the result.
 Please be careful about configuring the default index. See also <a class="reference external" href="https://koalas.readthedocs.io/en/latest/user_guide/options.html#default-index-type">Default Index Type</a>.</p>
-</div>
+</aside>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>func</strong><span class="classifier">function</span></dt><dd><p>Function to apply to each column or row.</p>
 </dd>
@@ -9452,7 +9456,7 @@ array/series.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>Series or DataFrame</dt><dd><p>Result of applying <code class="docutils literal notranslate"><span class="pre">func</span></code> along the given axis of the
 DataFrame.</p>
@@ -9472,7 +9476,7 @@ DataFrame.</p>
 <dt><a class="reference internal" href="pyspark.pandas.Series.apply.html#pyspark.pandas.Series.apply" title="pyspark.pandas.Series.apply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series.apply</span></code></a></dt><dd><p>The equivalent function for Series.</p>
 </dd>
 </dl>
-</div>
+</aside>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span> <span class="o">*</span> <span class="mi">3</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
@@ -9561,18 +9565,29 @@ annotation. In this case, the column names are automatically generated.</p>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.dot.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.DataFrame.dot</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.applymap.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.DataFrame.applymap</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.dot.html" title="previous page">pyspark.pandas.DataFrame.dot</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.applymap.html" title="next page">pyspark.pandas.DataFrame.applymap</a>
-
-              </div>
               
           </main>
           
@@ -9580,20 +9595,19 @@ annotation. In this case, the column names are automatically generated.</p>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

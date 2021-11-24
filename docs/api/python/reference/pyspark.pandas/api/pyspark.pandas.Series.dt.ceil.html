@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.Series.dt.ceil &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.Series.dt.month_name" href="pyspark.pandas.Series.dt.month_name.html" />
     <link rel="prev" title="pyspark.pandas.Series.dt.floor" href="pyspark.pandas.Series.dt.floor.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,14 +9366,14 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-series-dt-ceil">
+  <section id="pyspark-pandas-series-dt-ceil">
 <h1>pyspark.pandas.Series.dt.ceil<a class="headerlink" href="#pyspark-pandas-series-dt-ceil" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.Series.dt.ceil">
 <code class="sig-prename descclassname">dt.</code><code class="sig-name descname">ceil</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">freq</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>str<span class="p">, </span>pandas._libs.tslibs.offsets.DateOffset<span class="p">]</span></span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span></em><span class="sig-paren">)</span> &#x2192; ps.Series<a class="headerlink" href="#pyspark.pandas.Series.dt.ceil" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform ceil operation on the data to the specified freq.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>freq</strong><span class="classifier">str or Offset</span></dt><dd><p>The frequency level to round the index to. Must be a fixed
 frequency like ‘S’ (second) not ‘ME’ (month end).</p>
@@ -9389,17 +9393,17 @@ nonexistent times</p></li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>this option only works with pandas 0.24.0+</p>
-</div>
+</aside>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>Series</dt><dd><p>a Series with the same index for a Series.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt>ValueError if the <cite>freq</cite> cannot be converted.</dt><dd></dd>
 </dl>
@@ -9423,18 +9427,29 @@ nonexistent times</p></li>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.Series.dt.floor.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.Series.dt.floor</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.Series.dt.month_name.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.Series.dt.month_name</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.Series.dt.floor.html" title="previous page">pyspark.pandas.Series.dt.floor</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.Series.dt.month_name.html" title="next page">pyspark.pandas.Series.dt.month_name</a>
-
-              </div>
               
           </main>
           
@@ -9442,20 +9457,19 @@ nonexistent times</p></li>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

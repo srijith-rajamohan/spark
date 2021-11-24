@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>RowMatrix &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="SingularValueDecomposition" href="pyspark.mllib.linalg.distributed.SingularValueDecomposition.html" />
     <link rel="prev" title="MatrixEntry" href="pyspark.mllib.linalg.distributed.MatrixEntry.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="rowmatrix">
+  <section id="rowmatrix">
 <h1>RowMatrix<a class="headerlink" href="#rowmatrix" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.linalg.distributed.RowMatrix">
@@ -9370,7 +9374,7 @@
 <dd><p>Represents a row-oriented distributed Matrix with no meaningful
 row indices.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>rows</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a> or <a class="reference internal" href="pyspark.sql.DataFrame.html#pyspark.sql.DataFrame" title="pyspark.sql.DataFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.sql.DataFrame</span></code></a></span></dt><dd><p>An RDD or DataFrame of vectors. If a DataFrame is provided, it must have a single
 vector typed column.</p>
@@ -9390,10 +9394,6 @@ the first row.</p>
 </dl>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.linalg.distributed.RowMatrix.columnSimilarities" title="pyspark.mllib.linalg.distributed.RowMatrix.columnSimilarities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">columnSimilarities</span></code></a>([threshold])</p></td>
 <td><p>Compute similarities between columns of this matrix.</p></td>
@@ -9429,10 +9429,6 @@ the first row.</p>
 </table>
 <p class="rubric">Attributes</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.linalg.distributed.RowMatrix.rows" title="pyspark.mllib.linalg.distributed.RowMatrix.rows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rows</span></code></a></p></td>
 <td><p>Rows of the RowMatrix stored as an RDD of vectors.</p></td>
@@ -9482,7 +9478,7 @@ brute-force approach.</p>
 <p><span class="versionmodified added">New in version 2.0.0.</span></p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>threshold</strong><span class="classifier">float, optional</span></dt><dd><p>Set to 0 for deterministic guaranteed
 correctness. Similarities above this
@@ -9491,7 +9487,7 @@ estimate quality trade-off described above.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.linalg.distributed.CoordinateMatrix.html#pyspark.mllib.linalg.distributed.CoordinateMatrix" title="pyspark.mllib.linalg.distributed.CoordinateMatrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoordinateMatrix</span></code></a></dt><dd><p>An n x n sparse upper-triangular CoordinateMatrix of
 cosine similarities between columns of this matrix.</p>
@@ -9522,7 +9518,7 @@ cosine similarities between columns of this matrix.</p>
 <p><span class="versionmodified added">New in version 2.0.0.</span></p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><code class="xref py py-class docutils literal notranslate"><span class="pre">MultivariateStatisticalSummary</span></code></dt><dd><p>object containing column-wise summary statistics.</p>
 </dd>
@@ -9590,13 +9586,13 @@ observation.</p>
 <p><span class="versionmodified added">New in version 2.2.0.</span></p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>k</strong><span class="classifier">int</span></dt><dd><p>Number of principal components to keep.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.linalg.DenseMatrix.html#pyspark.mllib.linalg.DenseMatrix" title="pyspark.mllib.linalg.DenseMatrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.linalg.DenseMatrix</span></code></a></dt><dd></dd>
 </dl>
@@ -9642,7 +9638,7 @@ the Scala documentation.</p>
 <p><span class="versionmodified added">New in version 2.2.0.</span></p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>k</strong><span class="classifier">int</span></dt><dd><p>Number of leading singular values to keep (<cite>0 &lt; k &lt;= n</cite>).
 It might return less than k if there are numerically zero singular values
@@ -9658,7 +9654,7 @@ where s[0] is the largest singular value.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.linalg.distributed.SingularValueDecomposition.html#pyspark.mllib.linalg.distributed.SingularValueDecomposition" title="pyspark.mllib.linalg.distributed.SingularValueDecomposition"><code class="xref py py-class docutils literal notranslate"><span class="pre">SingularValueDecomposition</span></code></a></dt><dd></dd>
 </dl>
@@ -9688,14 +9684,14 @@ where s[0] is the largest singular value.</p>
 <p><span class="versionmodified added">New in version 2.2.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>matrix</strong><span class="classifier"><a class="reference internal" href="pyspark.mllib.linalg.Matrix.html#pyspark.mllib.linalg.Matrix" title="pyspark.mllib.linalg.Matrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.linalg.Matrix</span></code></a></span></dt><dd><p>a local dense matrix whose number of rows must match the number of columns
 of this matrix</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="#pyspark.mllib.linalg.distributed.RowMatrix" title="pyspark.mllib.linalg.distributed.RowMatrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">RowMatrix</span></code></a></dt><dd></dd>
 </dl>
@@ -9756,25 +9752,26 @@ of this matrix</p>
 <code class="sig-name descname">tallSkinnyQR</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">computeQ</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyspark/mllib/linalg/distributed.html#RowMatrix.tallSkinnyQR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyspark.mllib.linalg.distributed.RowMatrix.tallSkinnyQR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the QR decomposition of this RowMatrix.</p>
 <p>The implementation is designed to optimize the QR decomposition
-(factorization) for the RowMatrix of a tall and skinny shape <a class="reference internal" href="#r0c40050f2c2e-1" id="id1">[1]</a>.</p>
-<dl class="citation">
-<dt class="label" id="r0c40050f2c2e-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Paul G. Constantine, David F. Gleich. “Tall and skinny QR
+(factorization) for the RowMatrix of a tall and skinny shape <a class="reference internal" href="#r0c40050f2c2e-1" id="citation-reference-1">[1]</a>.</p>
+<div role="list" class="citation-list">
+<div class="citation" id="r0c40050f2c2e-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>Paul G. Constantine, David F. Gleich. “Tall and skinny QR
 factorizations in MapReduce architectures”
 <a class="reference external" href="https://doi.org/10.1145/1996092.1996103">https://doi.org/10.1145/1996092.1996103</a></p>
-</dd>
-</dl>
+</div>
+</div>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 2.0.0.</span></p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>computeQ</strong><span class="classifier">bool, optional</span></dt><dd><p>whether to computeQ</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.linalg.QRDecomposition.html#pyspark.mllib.linalg.QRDecomposition" title="pyspark.mllib.linalg.QRDecomposition"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.linalg.QRDecomposition</span></code></a></dt><dd><p>QRDecomposition(Q: RowMatrix, R: Matrix), where
 Q = None if computeQ = false.</p>
@@ -9819,18 +9816,29 @@ Q = None if computeQ = false.</p>
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.linalg.distributed.MatrixEntry.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">MatrixEntry</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.linalg.distributed.SingularValueDecomposition.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SingularValueDecomposition</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.linalg.distributed.MatrixEntry.html" title="previous page">MatrixEntry</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.linalg.distributed.SingularValueDecomposition.html" title="next page">SingularValueDecomposition</a>
-
-              </div>
               
           </main>
           
@@ -9838,20 +9846,19 @@ Q = None if computeQ = false.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

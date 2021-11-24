@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Installation &#8212; PySpark master documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="Quickstart: DataFrame" href="quickstart_df.html" />
     <link rel="prev" title="Getting Started" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -218,18 +222,18 @@
               
               <div>
                 
-  <div class="section" id="installation">
+  <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
 <p>PySpark is included in the official releases of Spark available in the <a class="reference external" href="https://spark.apache.org/downloads.html">Apache Spark website</a>.
 For Python users, PySpark also provides <code class="docutils literal notranslate"><span class="pre">pip</span></code> installation from PyPI. This is usually for local usage or as
 a client to connect to a cluster instead of setting up a cluster itself.</p>
 <p>This page includes instructions for installing PySpark by using pip, Conda, downloading manually,
 and building from the source.</p>
-<div class="section" id="python-version-supported">
+<section id="python-version-supported">
 <h2>Python Version Supported<a class="headerlink" href="#python-version-supported" title="Permalink to this headline">¶</a></h2>
 <p>Python 3.6 and above.</p>
-</div>
-<div class="section" id="using-pypi">
+</section>
+<section id="using-pypi">
 <h2>Using PyPI<a class="headerlink" href="#using-pypi" title="Permalink to this headline">¶</a></h2>
 <p>PySpark installation using <a class="reference external" href="https://pypi.org/project/pyspark/">PyPI</a> is as follows:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install pyspark
@@ -263,8 +267,8 @@ the network and the mirror chosen. <code class="docutils literal notranslate"><s
 <li><p><code class="docutils literal notranslate"><span class="pre">3.2</span></code>: Spark pre-built for Apache Hadoop 3.2 and later (default)</p></li>
 </ul>
 <p>Note that this installation way of PySpark with/without a specific Hadoop version is experimental. It can change or be removed between minor releases.</p>
-</div>
-<div class="section" id="using-conda">
+</section>
+<section id="using-conda">
 <h2>Using Conda<a class="headerlink" href="#using-conda" title="Permalink to this headline">¶</a></h2>
 <p>Conda is an open-source package management and environment management system which is a part of
 the <a class="reference external" href="https://docs.continuum.io/anaconda/">Anaconda</a> distribution. It is both cross-platform and
@@ -295,8 +299,8 @@ environment, for example as below. It will install PySpark under the new virtual
 </div>
 <p>However, note that <a class="reference external" href="https://anaconda.org/conda-forge/pyspark">PySpark at Conda</a> is not necessarily
 synced with PySpark release cycle because it is maintained by the community separately.</p>
-</div>
-<div class="section" id="manually-downloading">
+</section>
+<section id="manually-downloading">
 <h2>Manually Downloading<a class="headerlink" href="#manually-downloading" title="Permalink to this headline">¶</a></h2>
 <p>PySpark is included in the distributions available at the <a class="reference external" href="https://spark.apache.org/downloads.html">Apache Spark website</a>.
 You can download a distribution you want from the site. After that, uncompress the tar file into the directory where you want
@@ -312,19 +316,14 @@ One example of doing this is shown below:</p>
 <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="k">$(</span><span class="nv">ZIPS</span><span class="o">=(</span><span class="s2">&quot;</span><span class="nv">$SPARK_HOME</span><span class="s2">&quot;</span>/python/lib/*.zip<span class="k">)</span><span class="p">;</span> <span class="nv">IFS</span><span class="o">=</span>:<span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">ZIPS</span><span class="p">[*]</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">)</span>:<span class="nv">$PYTHONPATH</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="installing-from-source">
+</section>
+<section id="installing-from-source">
 <h2>Installing from Source<a class="headerlink" href="#installing-from-source" title="Permalink to this headline">¶</a></h2>
 <p>To install PySpark from source, refer to <a class="reference external" href="https://spark.apache.org/docs/latest/#downloading">Building Spark</a>.</p>
-</div>
-<div class="section" id="dependencies">
+</section>
+<section id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 33%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Package</p></th>
 <th class="head"><p>Minimum supported version</p></th>
@@ -371,19 +370,30 @@ installation errors, you can install PyArrow &gt;= 4.0.0 as below:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="s2">&quot;pyarrow&gt;=4.0.0&quot;</span> --prefer-binary
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Getting Started</a>
-    <a class='right-next' id="next-link" href="quickstart_df.html" title="next page">Quickstart: DataFrame</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Getting Started</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="quickstart_df.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Quickstart: DataFrame</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -391,20 +401,19 @@ installation errors, you can install PyArrow &gt;= 4.0.0 as below:</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

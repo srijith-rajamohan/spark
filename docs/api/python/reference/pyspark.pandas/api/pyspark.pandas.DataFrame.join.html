@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.DataFrame.join &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.DataFrame.update" href="pyspark.pandas.DataFrame.update.html" />
     <link rel="prev" title="pyspark.pandas.DataFrame.merge" href="pyspark.pandas.DataFrame.merge.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-dataframe-join">
+  <section id="pyspark-pandas-dataframe-join">
 <h1>pyspark.pandas.DataFrame.join<a class="headerlink" href="#pyspark-pandas-dataframe-join" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.DataFrame.join">
@@ -9371,7 +9375,7 @@
 <p>Join columns with <cite>right</cite> DataFrame either on index or on a key column. Efficiently join
 multiple DataFrame objects by index at once by passing a list.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>right: DataFrame, Series</strong></dt><dd></dd>
 <dt><strong>on: str, list of str, or array-like, optional</strong></dt><dd><p>Column or index level name(s) in the caller to join on the index in <cite>right</cite>, otherwise
@@ -9395,7 +9399,7 @@ with <cite>right</cite>’s index, preserving the order of the <cite>left</cite>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>DataFrame</dt><dd><p>A dataframe containing columns from both the <cite>left</cite> and <cite>right</cite>.</p>
 </dd>
@@ -9414,7 +9418,7 @@ with <cite>right</cite>’s index, preserving the order of the <cite>left</cite>
 <dt><a class="reference internal" href="pyspark.pandas.broadcast.html#pyspark.pandas.broadcast" title="pyspark.pandas.broadcast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">broadcast</span></code></a></dt><dd><p>Marks a DataFrame as small enough for use in broadcast joins.</p>
 </dd>
 </dl>
-</div>
+</aside>
 <p class="rubric">Notes</p>
 <p>Parameters on, lsuffix, and rsuffix are not supported when passing a list of DataFrame
 objects.</p>
@@ -9470,18 +9474,29 @@ original DataFrame’s index in the result unlike pandas.</p>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.merge.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.DataFrame.merge</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.update.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.DataFrame.update</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.merge.html" title="previous page">pyspark.pandas.DataFrame.merge</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.update.html" title="next page">pyspark.pandas.DataFrame.update</a>
-
-              </div>
               
           </main>
           
@@ -9489,20 +9504,19 @@ original DataFrame’s index in the result unlike pandas.</p>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

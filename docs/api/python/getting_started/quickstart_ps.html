@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Quickstart: Pandas API on Spark &#8212; PySpark master documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="PySpark User Guide" href="../user_guide/index.html" />
     <link rel="prev" title="Quickstart: DataFrame" href="quickstart_df.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -495,7 +499,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Quickstart:-Pandas-API-on-Spark">
+<section id="Quickstart:-Pandas-API-on-Spark">
 <h1>Quickstart: Pandas API on Spark<a class="headerlink" href="#Quickstart:-Pandas-API-on-Spark" title="Permalink to this headline">¶</a></h1>
 <p>This is a short introduction to pandas API on Spark, geared mainly for new users. This notebook shows you some key differences between pandas and pandas API on Spark. You can run this examples by yourself in ‘Live Notebook: pandas API on Spark’ at <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html">the quickstart page</a>.</p>
 <p>Customarily, we import pandas API on Spark as follows:</p>
@@ -511,7 +515,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="section" id="Object-Creation">
+<section id="Object-Creation">
 <h2>Object Creation<a class="headerlink" href="#Object-Creation" title="Permalink to this headline">¶</a></h2>
 <p>Creating a pandas-on-Spark Series by passing a list of values, letting pandas API on Spark create a default integer index:</p>
 <div class="nbinput nblast docutils container">
@@ -1536,8 +1540,8 @@ array([[ 0.91255803, -0.79564526, -0.28911463,  0.18760567],
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Missing-Data">
+</section>
+<section id="Missing-Data">
 <h2>Missing Data<a class="headerlink" href="#Missing-Data" title="Permalink to this headline">¶</a></h2>
 <p>Pandas API on Spark primarily uses the value <code class="docutils literal notranslate"><span class="pre">np.nan</span></code> to represent missing data. It is by default not included in computations.</p>
 <div class="nbinput nblast docutils container">
@@ -1781,10 +1785,10 @@ array([[ 0.91255803, -0.79564526, -0.28911463,  0.18760567],
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Operations">
+</section>
+<section id="Operations">
 <h2>Operations<a class="headerlink" href="#Operations" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Stats">
+<section id="Stats">
 <h3>Stats<a class="headerlink" href="#Stats" title="Permalink to this headline">¶</a></h3>
 <p>Performing a descriptive statistic:</p>
 <div class="nbinput docutils container">
@@ -1809,8 +1813,8 @@ D   -0.334542
 dtype: float64
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Spark-Configurations">
+</section>
+<section id="Spark-Configurations">
 <h3>Spark Configurations<a class="headerlink" href="#Spark-Configurations" title="Permalink to this headline">¶</a></h3>
 <p>Various configurations in PySpark could be applied internally in pandas API on Spark. For example, you can enable Arrow optimization to hugely speed up internal pandas conversion. See also PySpark Usage Guide for Pandas with Apache Arrow in PySpark documentation.</p>
 <div class="nbinput nblast docutils container">
@@ -1871,9 +1875,9 @@ dtype: float64
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Grouping">
+</section>
+</section>
+<section id="Grouping">
 <h2>Grouping<a class="headerlink" href="#Grouping" title="Permalink to this headline">¶</a></h2>
 <p>By “group by” we are referring to a process involving one or more of the following steps:</p>
 <ul class="simple">
@@ -2134,8 +2138,8 @@ dtype: float64
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Plotting">
+</section>
+<section id="Plotting">
 <h2>Plotting<a class="headerlink" href="#Plotting" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
@@ -2348,10 +2352,10 @@ if (outputEl) {{
                         })                };                });            </script>        </div></div>
 </div>
 <p>For more details, <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/frame.html#plotting">Plotting</a> documentation.</p>
-</div>
-<div class="section" id="Getting-data-in/out">
+</section>
+<section id="Getting-data-in/out">
 <h2>Getting data in/out<a class="headerlink" href="#Getting-data-in/out" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="CSV">
+<section id="CSV">
 <h3>CSV<a class="headerlink" href="#CSV" title="Permalink to this headline">¶</a></h3>
 <p>CSV is straightforward and easy to use. See <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.to_csv.html">here</a> to write a CSV file and <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.read_csv.html">here</a> to read a CSV file.</p>
 <div class="nbinput docutils container">
@@ -2468,8 +2472,8 @@ if (outputEl) {{
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Parquet">
+</section>
+<section id="Parquet">
 <h3>Parquet<a class="headerlink" href="#Parquet" title="Permalink to this headline">¶</a></h3>
 <p>Parquet is an efficient and compact file format to read and write faster. See <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.to_paruqet.html">here</a> to write a Parquet file and <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.read_parquet.html">here</a> to read a Parquet file.</p>
 <div class="nbinput docutils container">
@@ -2586,8 +2590,8 @@ if (outputEl) {{
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Spark-IO">
+</section>
+<section id="Spark-IO">
 <h3>Spark IO<a class="headerlink" href="#Spark-IO" title="Permalink to this headline">¶</a></h3>
 <p>In addition, pandas API on Spark fully supports Spark’s various datasources such as ORC and an external datasource. See <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.to_orc.html">here</a> to write it to the specified datasource and <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.read_orc.html">here</a> to read it from the datasource.</p>
 <div class="nbinput docutils container">
@@ -2705,20 +2709,31 @@ if (outputEl) {{
 </div></div>
 </div>
 <p>See the <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/io.html">Input/Output</a> documentation for more details.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="quickstart_df.html" title="previous page">Quickstart: DataFrame</a>
-    <a class='right-next' id="next-link" href="../user_guide/index.html" title="next page">PySpark User Guide</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="quickstart_df.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Quickstart: DataFrame</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../user_guide/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PySpark User Guide</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -2726,20 +2741,19 @@ if (outputEl) {{
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

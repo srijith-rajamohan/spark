@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Quickstart: DataFrame &#8212; PySpark master documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="Quickstart: Pandas API on Spark" href="quickstart_ps.html" />
     <link rel="prev" title="Installation" href="install.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -488,7 +492,7 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Quickstart:-DataFrame">
+<section id="Quickstart:-DataFrame">
 <h1>Quickstart: DataFrame<a class="headerlink" href="#Quickstart:-DataFrame" title="Permalink to this headline">¶</a></h1>
 <p>This is a short introduction and quickstart for the PySpark DataFrame API. PySpark DataFrames are lazily evaluated. They are implemented on top of <a class="reference external" href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#overview">RDD</a>s. When Spark <a class="reference external" href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#transformations">transforms</a> data, it does not immediately compute the transformation but plans how to compute later. When
 <a class="reference external" href="https://spark.apache.org/docs/latest/rdd-programming-guide.html#actions">actions</a> such as <code class="docutils literal notranslate"><span class="pre">collect()</span></code> are explicitly called, the computation starts. This notebook shows the basic usages of the DataFrame, geared mainly for new users. You can run the latest version of these examples by yourself in ‘Live Notebook: DataFrame’ at <a class="reference external" href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html">the quickstart page</a>.</p>
@@ -506,7 +510,7 @@ Guide</a> and <a class="reference external" href="https://spark.apache.org/docs/
 </pre></div>
 </div>
 </div>
-<div class="section" id="DataFrame-Creation">
+<section id="DataFrame-Creation">
 <h2>DataFrame Creation<a class="headerlink" href="#DataFrame-Creation" title="Permalink to this headline">¶</a></h2>
 <p>A PySpark DataFrame can be created via <code class="docutils literal notranslate"><span class="pre">pyspark.sql.SparkSession.createDataFrame</span></code> typically by passing a list of lists, tuples, dictionaries and <code class="docutils literal notranslate"><span class="pre">pyspark.sql.Row</span></code>s, a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html">pandas DataFrame</a> and an RDD consisting of such a list. <code class="docutils literal notranslate"><span class="pre">pyspark.sql.SparkSession.createDataFrame</span></code> takes the <code class="docutils literal notranslate"><span class="pre">schema</span></code> argument to specify the schema of the DataFrame. When it is omitted, PySpark infers the corresponding schema by taking a sample from
 the data.</p>
@@ -648,8 +652,8 @@ root
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Viewing-Data">
+</section>
+<section id="Viewing-Data">
 <h2>Viewing Data<a class="headerlink" href="#Viewing-Data" title="Permalink to this headline">¶</a></h2>
 <p>The top rows of a DataFrame can be displayed using <code class="docutils literal notranslate"><span class="pre">DataFrame.show()</span></code>.</p>
 <div class="nbinput docutils container">
@@ -901,8 +905,8 @@ root
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Selecting-and-Accessing-Data">
+</section>
+<section id="Selecting-and-Accessing-Data">
 <h2>Selecting and Accessing Data<a class="headerlink" href="#Selecting-and-Accessing-Data" title="Permalink to this headline">¶</a></h2>
 <p>PySpark DataFrame is lazily evaluated and simply selecting a column does not trigger the computation but it returns a <code class="docutils literal notranslate"><span class="pre">Column</span></code> instance.</p>
 <div class="nbinput docutils container">
@@ -1018,8 +1022,8 @@ True
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Applying-a-Function">
+</section>
+<section id="Applying-a-Function">
 <h2>Applying a Function<a class="headerlink" href="#Applying-a-Function" title="Permalink to this headline">¶</a></h2>
 <p>PySpark supports various UDFs and APIs to allow users to execute Python native functions. See also the latest <a class="reference external" href="https://spark.apache.org/docs/latest/sql-pyspark-pandas-with-arrow.html#pandas-udfs-aka-vectorized-udfs">Pandas UDFs</a> and <a class="reference external" href="https://spark.apache.org/docs/latest/sql-pyspark-pandas-with-arrow.html#pandas-function-apis">Pandas Function APIs</a>. For instance, the example below allows users to directly use the APIs in <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html">a pandas
 Series</a> within Python native function.</p>
@@ -1082,8 +1086,8 @@ Series</a> within Python native function.</p>
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Grouping-Data">
+</section>
+<section id="Grouping-Data">
 <h2>Grouping Data<a class="headerlink" href="#Grouping-Data" title="Permalink to this headline">¶</a></h2>
 <p>PySpark DataFrame also provides a way of handling grouped data by using the common approach, split-apply-combine strategy. It groups the data by a certain condition applies a function to each group and then combines them back to the DataFrame.</p>
 <div class="nbinput docutils container">
@@ -1215,12 +1219,12 @@ Series</a> within Python native function.</p>
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Getting-Data-in/out">
+</section>
+<section id="Getting-Data-in/out">
 <h2>Getting Data in/out<a class="headerlink" href="#Getting-Data-in/out" title="Permalink to this headline">¶</a></h2>
 <p>CSV is straightforward and easy to use. Parquet and ORC are efficient and compact file formats to read and write faster.</p>
 <p>There are many other data sources available in PySpark such as JDBC, text, binaryFile, Avro, etc. See also the latest <a class="reference external" href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL, DataFrames and Datasets Guide</a> in Apache Spark documentation.</p>
-<div class="section" id="CSV">
+<section id="CSV">
 <h3>CSV<a class="headerlink" href="#CSV" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
@@ -1252,8 +1256,8 @@ Series</a> within Python native function.</p>
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Parquet">
+</section>
+<section id="Parquet">
 <h3>Parquet<a class="headerlink" href="#Parquet" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
@@ -1285,8 +1289,8 @@ Series</a> within Python native function.</p>
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="ORC">
+</section>
+<section id="ORC">
 <h3>ORC<a class="headerlink" href="#ORC" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
@@ -1318,9 +1322,9 @@ Series</a> within Python native function.</p>
 
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Working-with-SQL">
+</section>
+</section>
+<section id="Working-with-SQL">
 <h2>Working with SQL<a class="headerlink" href="#Working-with-SQL" title="Permalink to this headline">¶</a></h2>
 <p>DataFrame and Spark SQL share the same execution engine so they can be interchangeably used seamlessly. For example, you can register the DataFrame as a table and run a SQL easily as below:</p>
 <div class="nbinput docutils container">
@@ -1420,19 +1424,30 @@ Series</a> within Python native function.</p>
 
 </pre></div></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="install.html" title="previous page">Installation</a>
-    <a class='right-next' id="next-link" href="quickstart_ps.html" title="next page">Quickstart: Pandas API on Spark</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="install.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Installation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="quickstart_ps.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Quickstart: Pandas API on Spark</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -1440,20 +1455,19 @@ Series</a> within Python native function.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.Series.to_json &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.Series.to_csv" href="pyspark.pandas.Series.to_csv.html" />
     <link rel="prev" title="pyspark.pandas.Series.to_markdown" href="pyspark.pandas.Series.to_markdown.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-series-to-json">
+  <section id="pyspark-pandas-series-to-json">
 <h1>pyspark.pandas.Series.to_json<a class="headerlink" href="#pyspark-pandas-series-to-json" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.Series.to_json">
@@ -9372,23 +9376,23 @@
 <p class="admonition-title">Note</p>
 <p>pandas-on-Spark <cite>to_json</cite> writes files to a path or URI. Unlike pandas’,
 pandas-on-Spark respects HDFS’s property such as ‘fs.default.name’.</p>
-</div>
+</aside>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>pandas-on-Spark writes JSON files into the directory, <cite>path</cite>, and writes
 multiple <cite>part-…</cite> files in the directory when <cite>path</cite> is specified.
 This behaviour was inherited from Apache Spark. The number of files can
 be controlled by <cite>num_files</cite>.</p>
-</div>
+</aside>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>output JSON format is different from pandas’. It always use <cite>orient=’records’</cite>
 for its output. This behaviour might have to change in the near future.</p>
-</div>
+</aside>
 <p>Note NaN’s and None will be converted to null and datetime objects
 will be converted to UNIX timestamps.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>path</strong><span class="classifier">string, optional</span></dt><dd><p>File path. If not specified, the result is returned as
 a string.</p>
@@ -9426,7 +9430,7 @@ This parameter only works when <cite>path</cite> is specified.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>str or None</dt><dd></dd>
 </dl>
@@ -9464,18 +9468,29 @@ This parameter only works when <cite>path</cite> is specified.</p>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.Series.to_markdown.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.Series.to_markdown</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.Series.to_csv.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.Series.to_csv</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.Series.to_markdown.html" title="previous page">pyspark.pandas.Series.to_markdown</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.Series.to_csv.html" title="next page">pyspark.pandas.Series.to_csv</a>
-
-              </div>
               
           </main>
           
@@ -9483,20 +9498,19 @@ This parameter only works when <cite>path</cite> is specified.</p>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

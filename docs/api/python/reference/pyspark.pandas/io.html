@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Input/Output &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.range" href="api/pyspark.pandas.range.html" />
     <link rel="prev" title="Pandas API on Spark" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9427,29 +9431,21 @@
               
               <div>
                 
-  <div class="section" id="input-output">
+  <section id="input-output">
 <span id="api-io"></span><h1>Input/Output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="data-generator">
+<section id="data-generator">
 <h2>Data Generator<a class="headerlink" href="#data-generator" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.range.html#pyspark.pandas.range" title="pyspark.pandas.range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">range</span></code></a>(start[, end, step, num_partitions])</p></td>
 <td><p>Create a DataFrame with some range of numbers.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="spark-metastore-table">
+</section>
+<section id="spark-metastore-table">
 <h2>Spark Metastore Table<a class="headerlink" href="#spark-metastore-table" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_table.html#pyspark.pandas.read_table" title="pyspark.pandas.read_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_table</span></code></a>(name[, index_col])</p></td>
 <td><p>Read a Spark table and return a DataFrame.</p></td>
@@ -9459,14 +9455,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="delta-lake">
+</section>
+<section id="delta-lake">
 <h2>Delta Lake<a class="headerlink" href="#delta-lake" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_delta.html#pyspark.pandas.read_delta" title="pyspark.pandas.read_delta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_delta</span></code></a>(path[, version, timestamp, index_col])</p></td>
 <td><p>Read a Delta Lake table on some file system and return a DataFrame.</p></td>
@@ -9476,14 +9468,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="parquet">
+</section>
+<section id="parquet">
 <h2>Parquet<a class="headerlink" href="#parquet" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_parquet.html#pyspark.pandas.read_parquet" title="pyspark.pandas.read_parquet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_parquet</span></code></a>(path[, columns, index_col, …])</p></td>
 <td><p>Load a parquet object from the file path, returning a DataFrame.</p></td>
@@ -9493,14 +9481,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="orc">
+</section>
+<section id="orc">
 <h2>ORC<a class="headerlink" href="#orc" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_orc.html#pyspark.pandas.read_orc" title="pyspark.pandas.read_orc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_orc</span></code></a>(path[, columns, index_col])</p></td>
 <td><p>Load an ORC object from the file path, returning a DataFrame.</p></td>
@@ -9510,14 +9494,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="generic-spark-i-o">
+</section>
+<section id="generic-spark-i-o">
 <h2>Generic Spark I/O<a class="headerlink" href="#generic-spark-i-o" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_spark_io.html#pyspark.pandas.read_spark_io" title="pyspark.pandas.read_spark_io"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_spark_io</span></code></a>([path, format, schema, index_col])</p></td>
 <td><p>Load a DataFrame from a Spark data source.</p></td>
@@ -9527,14 +9507,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="flat-file-csv">
+</section>
+<section id="flat-file-csv">
 <h2>Flat File / CSV<a class="headerlink" href="#flat-file-csv" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_csv.html#pyspark.pandas.read_csv" title="pyspark.pandas.read_csv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_csv</span></code></a>(path[, sep, header, names, …])</p></td>
 <td><p>Read CSV (comma-separated) file into DataFrame or Series.</p></td>
@@ -9544,14 +9520,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="clipboard">
+</section>
+<section id="clipboard">
 <h2>Clipboard<a class="headerlink" href="#clipboard" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_clipboard.html#pyspark.pandas.read_clipboard" title="pyspark.pandas.read_clipboard"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_clipboard</span></code></a>([sep])</p></td>
 <td><p>Read text from clipboard and pass to read_csv.</p></td>
@@ -9561,14 +9533,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="excel">
+</section>
+<section id="excel">
 <h2>Excel<a class="headerlink" href="#excel" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_excel.html#pyspark.pandas.read_excel" title="pyspark.pandas.read_excel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_excel</span></code></a>(io[, sheet_name, header, names, …])</p></td>
 <td><p>Read an Excel file into a pandas-on-Spark DataFrame or Series.</p></td>
@@ -9578,14 +9546,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="json">
+</section>
+<section id="json">
 <h2>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_json.html#pyspark.pandas.read_json" title="pyspark.pandas.read_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_json</span></code></a>(path[, lines, index_col])</p></td>
 <td><p>Convert a JSON string to DataFrame.</p></td>
@@ -9595,14 +9559,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="html">
+</section>
+<section id="html">
 <h2>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_html.html#pyspark.pandas.read_html" title="pyspark.pandas.read_html"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_html</span></code></a>(io[, match, flavor, header, …])</p></td>
 <td><p>Read HTML tables into a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> objects.</p></td>
@@ -9612,14 +9572,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="sql">
+</section>
+<section id="sql">
 <h2>SQL<a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.read_sql_table.html#pyspark.pandas.read_sql_table" title="pyspark.pandas.read_sql_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_sql_table</span></code></a>(table_name, con[, schema, …])</p></td>
 <td><p>Read SQL database table into a DataFrame.</p></td>
@@ -9632,19 +9588,30 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Pandas API on Spark</a>
-    <a class='right-next' id="next-link" href="api/pyspark.pandas.range.html" title="next page">pyspark.pandas.range</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Pandas API on Spark</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="api/pyspark.pandas.range.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.range</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -9652,20 +9619,19 @@
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Transform and apply a function &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -38,7 +39,10 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="../../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -199,14 +203,14 @@
               
               <div>
                 
-  <div class="section" id="transform-and-apply-a-function">
+  <section id="transform-and-apply-a-function">
 <h1>Transform and apply a function<a class="headerlink" href="#transform-and-apply-a-function" title="Permalink to this headline">¶</a></h1>
 <p>There are many APIs that allow users to apply a function against pandas-on-Spark DataFrame such as
 <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.transform.html#pyspark.pandas.DataFrame.transform" title="pyspark.pandas.DataFrame.transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.transform()</span></code></a>, <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.apply.html#pyspark.pandas.DataFrame.apply" title="pyspark.pandas.DataFrame.apply"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.apply()</span></code></a>, <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.pandas_on_spark.transform_batch.html#pyspark.pandas.DataFrame.pandas_on_spark.transform_batch" title="pyspark.pandas.DataFrame.pandas_on_spark.transform_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark.transform_batch()</span></code></a>,
 <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.pandas_on_spark.apply_batch.html#pyspark.pandas.DataFrame.pandas_on_spark.apply_batch" title="pyspark.pandas.DataFrame.pandas_on_spark.apply_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark.apply_batch()</span></code></a>, <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.Series.pandas_on_spark.transform_batch.html#pyspark.pandas.Series.pandas_on_spark.transform_batch" title="pyspark.pandas.Series.pandas_on_spark.transform_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">Series.pandas_on_spark.transform_batch()</span></code></a>, etc. Each has a distinct
 purpose and works differently internally. This section describes the differences among
 them where users are confused often.</p>
-<div class="section" id="transform-and-apply">
+<section id="transform-and-apply">
 <h2><code class="docutils literal notranslate"><span class="pre">transform</span></code> and <code class="docutils literal notranslate"><span class="pre">apply</span></code><a class="headerlink" href="#transform-and-apply" title="Permalink to this headline">¶</a></h2>
 <p>The main difference between <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.transform.html#pyspark.pandas.DataFrame.transform" title="pyspark.pandas.DataFrame.transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.transform()</span></code></a> and <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.apply.html#pyspark.pandas.DataFrame.apply" title="pyspark.pandas.DataFrame.apply"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.apply()</span></code></a> is that the former requires
 to return the same length of the input and the latter does not require this. See the example below:</p>
@@ -238,8 +242,8 @@ to return the same length of the input and the latter does not require this. See
 <a class="reference internal image-reference" href="https://user-images.githubusercontent.com/6477701/80076898-c2975c00-8587-11ea-9b2c-69c9729e9294.png"><img alt="apply axis" class="align-center" src="https://user-images.githubusercontent.com/6477701/80076898-c2975c00-8587-11ea-9b2c-69c9729e9294.png" style="width: 600px;" /></a>
 <p>In the examples above, the type hints were not used for simplicity but it is encouraged to use to avoid performance penalty.
 Please refer the API documentations.</p>
-</div>
-<div class="section" id="pandas-on-spark-transform-batch-and-pandas-on-spark-apply-batch">
+</section>
+<section id="pandas-on-spark-transform-batch-and-pandas-on-spark-apply-batch">
 <h2><code class="docutils literal notranslate"><span class="pre">pandas_on_spark.transform_batch</span></code> and <code class="docutils literal notranslate"><span class="pre">pandas_on_spark.apply_batch</span></code><a class="headerlink" href="#pandas-on-spark-transform-batch-and-pandas-on-spark-apply-batch" title="Permalink to this headline">¶</a></h2>
 <p>In <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.pandas_on_spark.transform_batch.html#pyspark.pandas.DataFrame.pandas_on_spark.transform_batch" title="pyspark.pandas.DataFrame.pandas_on_spark.transform_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark.transform_batch()</span></code></a>, <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.DataFrame.pandas_on_spark.apply_batch.html#pyspark.pandas.DataFrame.pandas_on_spark.apply_batch" title="pyspark.pandas.DataFrame.pandas_on_spark.apply_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark.apply_batch()</span></code></a>, <a class="reference internal" href="../../reference/pyspark.pandas/api/pyspark.pandas.Series.pandas_on_spark.transform_batch.html#pyspark.pandas.Series.pandas_on_spark.transform_batch" title="pyspark.pandas.Series.pandas_on_spark.transform_batch"><code class="xref py py-func docutils literal notranslate"><span class="pre">Series.pandas_on_spark.transform_batch()</span></code></a>, etc., the <code class="docutils literal notranslate"><span class="pre">batch</span></code>
 postfix means each chunk in pandas-on-Spark DataFrame or Series. The APIs slice the pandas-on-Spark DataFrame or Series, and
@@ -279,17 +283,16 @@ a pandas Series as a chunk of pandas-on-Spark Series.</p>
 <p>Under the hood, each batch of pandas-on-Spark Series is split to multiple pandas Series, and each function computes on that as below:</p>
 <a class="reference internal image-reference" href="https://user-images.githubusercontent.com/6477701/80076795-a3003380-8587-11ea-8b73-186e4047f8c0.png"><img alt="pandas_on_spark.transform_batch in Series" class="align-center" src="https://user-images.githubusercontent.com/6477701/80076795-a3003380-8587-11ea-8b73-186e4047f8c0.png" style="width: 350px;" /></a>
 <p>There are more details such as the type inference and preventing its performance penalty. Please refer the API documentations.</p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
@@ -297,20 +300,19 @@ a pandas Series as a chunk of pandas-on-Spark Series.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

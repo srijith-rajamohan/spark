@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>IsotonicRegression &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="StreamingLinearAlgorithm" href="pyspark.mllib.regression.StreamingLinearAlgorithm.html" />
     <link rel="prev" title="IsotonicRegressionModel" href="pyspark.mllib.regression.IsotonicRegressionModel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="isotonicregression">
+  <section id="isotonicregression">
 <h1>IsotonicRegression<a class="headerlink" href="#isotonicregression" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.regression.IsotonicRegression">
@@ -9375,30 +9379,28 @@ algorithm. Only univariate (single feature) algorithm supported.</p>
 </div>
 <p class="rubric">Notes</p>
 <p>Sequential PAV implementation based on
-Tibshirani, Ryan J., Holger Hoefling, and Robert Tibshirani (2011) <a class="reference internal" href="#re0399860f3df-1" id="id1">[1]</a></p>
+Tibshirani, Ryan J., Holger Hoefling, and Robert Tibshirani (2011) <a class="reference internal" href="#re0399860f3df-1" id="citation-reference-1">[1]</a></p>
 <p>Sequential PAV parallelization based on
-Kearsley, Anthony J., Richard A. Tapia, and Michael W. Trosset (1996) <a class="reference internal" href="#re0399860f3df-2" id="id2">[2]</a></p>
+Kearsley, Anthony J., Richard A. Tapia, and Michael W. Trosset (1996) <a class="reference internal" href="#re0399860f3df-2" id="citation-reference-2">[2]</a></p>
 <p>See also
 <a class="reference external" href="http://en.wikipedia.org/wiki/Isotonic_regression">Isotonic regression (Wikipedia)</a>.</p>
-<dl class="citation">
-<dt class="label" id="re0399860f3df-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Tibshirani, Ryan J., Holger Hoefling, and Robert Tibshirani.
+<div role="list" class="citation-list">
+<div class="citation" id="re0399860f3df-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>Tibshirani, Ryan J., Holger Hoefling, and Robert Tibshirani.
 “Nearly-isotonic regression.” Technometrics 53.1 (2011): 54-61.
 Available from <a class="reference external" href="http://www.stat.cmu.edu/~ryantibs/papers/neariso.pdf">http://www.stat.cmu.edu/~ryantibs/papers/neariso.pdf</a></p>
-</dd>
-<dt class="label" id="re0399860f3df-2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>Kearsley, Anthony J., Richard A. Tapia, and Michael W. Trosset
+</div>
+<div class="citation" id="re0399860f3df-2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-2">2</a><span class="fn-bracket">]</span></span>
+<p>Kearsley, Anthony J., Richard A. Tapia, and Michael W. Trosset
 “An approach to parallelizing isotonic regression.”
 Applied Mathematics and Parallel Computing. Physica-Verlag HD, 1996. 141-147.
 Available from <a class="reference external" href="http://softlib.rice.edu/pub/CRPC-TRs/reports/CRPC-TR96640.pdf">http://softlib.rice.edu/pub/CRPC-TRs/reports/CRPC-TR96640.pdf</a></p>
-</dd>
-</dl>
+</div>
+</div>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.regression.IsotonicRegression.train" title="pyspark.mllib.regression.IsotonicRegression.train"><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code></a>(data[, isotonic])</p></td>
 <td><p>Train an isotonic regression model on the given data.</p></td>
@@ -9414,7 +9416,7 @@ Available from <a class="reference external" href="http://softlib.rice.edu/pub/C
 <p><span class="versionmodified added">New in version 1.4.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>data</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>RDD of (label, feature, weight) tuples.</p>
 </dd>
@@ -9428,18 +9430,29 @@ Available from <a class="reference external" href="http://softlib.rice.edu/pub/C
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.regression.IsotonicRegressionModel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">IsotonicRegressionModel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.regression.StreamingLinearAlgorithm.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">StreamingLinearAlgorithm</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.regression.IsotonicRegressionModel.html" title="previous page">IsotonicRegressionModel</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.regression.StreamingLinearAlgorithm.html" title="next page">StreamingLinearAlgorithm</a>
-
-              </div>
               
           </main>
           
@@ -9447,20 +9460,19 @@ Available from <a class="reference external" href="http://softlib.rice.edu/pub/C
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

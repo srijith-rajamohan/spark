@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Apache Arrow in PySpark &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -38,7 +39,10 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "tex2jax_ignore|mathjax_ignore|document", "processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="search" title="Search" href="../../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -271,7 +275,7 @@
               
               <div>
                 
-  <div class="section" id="apache-arrow-in-pyspark">
+  <section id="apache-arrow-in-pyspark">
 <h1>Apache Arrow in PySpark<a class="headerlink" href="#apache-arrow-in-pyspark" title="Permalink to this headline">¶</a></h1>
 <p>Apache Arrow is an in-memory columnar data format that is used in Spark to efficiently transfer
 data between JVM and Python processes. This currently is most beneficial to Python users that
@@ -279,7 +283,7 @@ work with Pandas/NumPy data. Its usage is not automatic and might require some m
 changes to configuration or code to take full advantage and ensure compatibility. This guide will
 give a high-level description of how to use Arrow in Spark and highlight any differences when
 working with Arrow-enabled data.</p>
-<div class="section" id="ensure-pyarrow-installed">
+<section id="ensure-pyarrow-installed">
 <h2>Ensure PyArrow Installed<a class="headerlink" href="#ensure-pyarrow-installed" title="Permalink to this headline">¶</a></h2>
 <p>To use Apache Arrow in PySpark, <a class="reference internal" href="#recommended-pandas-and-pyarrow-versions"><span class="std std-ref">the recommended version of PyArrow</span></a>
 should be installed.
@@ -288,8 +292,8 @@ SQL module with the command <code class="docutils literal notranslate"><span cla
 is installed and available on all cluster nodes.
 You can install using pip or conda from the conda-forge channel. See PyArrow
 <a class="reference external" href="https://arrow.apache.org/docs/python/install.html">installation</a> for details.</p>
-</div>
-<div class="section" id="enabling-for-conversion-to-from-pandas">
+</section>
+<section id="enabling-for-conversion-to-from-pandas">
 <h2>Enabling for Conversion to/from Pandas<a class="headerlink" href="#enabling-for-conversion-to-from-pandas" title="Permalink to this headline">¶</a></h2>
 <p>Arrow is available as an optimization when converting a Spark DataFrame to a Pandas DataFrame
 using the call <a class="reference internal" href="../../reference/api/pyspark.sql.DataFrame.toPandas.html#pyspark.sql.DataFrame.toPandas" title="pyspark.sql.DataFrame.toPandas"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataFrame.toPandas()</span></code></a> and when creating a Spark DataFrame from a Pandas DataFrame with
@@ -321,8 +325,8 @@ DataFrame to the driver program and should be done on a small subset of the data
 data types are currently supported and an error can be raised if a column has an unsupported type.
 If an error occurs during <a class="reference internal" href="../../reference/api/pyspark.sql.SparkSession.createDataFrame.html#pyspark.sql.SparkSession.createDataFrame" title="pyspark.sql.SparkSession.createDataFrame"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SparkSession.createDataFrame()</span></code></a>, Spark will fall back to create the
 DataFrame without Arrow.</p>
-</div>
-<div class="section" id="pandas-udfs-a-k-a-vectorized-udfs">
+</section>
+<section id="pandas-udfs-a-k-a-vectorized-udfs">
 <h2>Pandas UDFs (a.k.a. Vectorized UDFs)<a class="headerlink" href="#pandas-udfs-a-k-a-vectorized-udfs" title="Permalink to this headline">¶</a></h2>
 <p>Pandas UDFs are user defined functions that are executed by Spark using
 Arrow to transfer data and Pandas to work with the data, which allows vectorized operations. A Pandas
@@ -366,7 +370,7 @@ specify the type hints of <code class="docutils literal notranslate"><span class
 </div>
 <p>In the following sections, it describes the combinations of the supported type hints. For simplicity,
 <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> variant is omitted.</p>
-<div class="section" id="series-to-series">
+<section id="series-to-series">
 <h3>Series to Series<a class="headerlink" href="#series-to-series" title="Permalink to this headline">¶</a></h3>
 <p>The type hint can be expressed as <code class="docutils literal notranslate"><span class="pre">pandas.Series</span></code>, … -&gt; <code class="docutils literal notranslate"><span class="pre">pandas.Series</span></code>.</p>
 <p>By using <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a> with the function having such type hints above, it creates a Pandas UDF where the given
@@ -409,8 +413,8 @@ the results together.</p>
 </pre></div>
 </div>
 <p>For detailed usage, please see <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a>.</p>
-</div>
-<div class="section" id="iterator-of-series-to-iterator-of-series">
+</section>
+<section id="iterator-of-series-to-iterator-of-series">
 <h3>Iterator of Series to Iterator of Series<a class="headerlink" href="#iterator-of-series-to-iterator-of-series" title="Permalink to this headline">¶</a></h3>
 <p>The type hint can be expressed as <code class="docutils literal notranslate"><span class="pre">Iterator[pandas.Series]</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Iterator[pandas.Series]</span></code>.</p>
 <p>By using <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a> with the function having such type hints above, it creates a Pandas UDF where the given
@@ -460,8 +464,8 @@ identically as Series to Series case. The pseudocode below illustrates the examp
 </pre></div>
 </div>
 <p>For detailed usage, please see <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a>.</p>
-</div>
-<div class="section" id="iterator-of-multiple-series-to-iterator-of-series">
+</section>
+<section id="iterator-of-multiple-series-to-iterator-of-series">
 <h3>Iterator of Multiple Series to Iterator of Series<a class="headerlink" href="#iterator-of-multiple-series-to-iterator-of-series" title="Permalink to this headline">¶</a></h3>
 <p>The type hint can be expressed as <code class="docutils literal notranslate"><span class="pre">Iterator[Tuple[pandas.Series,</span> <span class="pre">...]]</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Iterator[pandas.Series]</span></code>.</p>
 <p>By using <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a> with the function having such type hints above, it creates a Pandas UDF where the
@@ -497,8 +501,8 @@ to Iterator of Series case.</p>
 </pre></div>
 </div>
 <p>For detailed usage, please see <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a>.</p>
-</div>
-<div class="section" id="series-to-scalar">
+</section>
+<section id="series-to-scalar">
 <h3>Series to Scalar<a class="headerlink" href="#series-to-scalar" title="Permalink to this headline">¶</a></h3>
 <p>The type hint can be expressed as <code class="docutils literal notranslate"><span class="pre">pandas.Series</span></code>, … -&gt; <code class="docutils literal notranslate"><span class="pre">Any</span></code>.</p>
 <p>By using <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a> with the function having such type hints above, it creates a Pandas UDF similar
@@ -558,9 +562,9 @@ and window operations:</p>
 </pre></div>
 </div>
 <p>For detailed usage, please see <a class="reference internal" href="../../reference/api/pyspark.sql.functions.pandas_udf.html#pyspark.sql.functions.pandas_udf" title="pyspark.sql.functions.pandas_udf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas_udf()</span></code></a>.</p>
-</div>
-</div>
-<div class="section" id="pandas-function-apis">
+</section>
+</section>
+<section id="pandas-function-apis">
 <h2>Pandas Function APIs<a class="headerlink" href="#pandas-function-apis" title="Permalink to this headline">¶</a></h2>
 <p>Pandas Function APIs can directly apply a Python native function against the whole <a class="reference internal" href="../../reference/api/pyspark.sql.DataFrame.html#pyspark.sql.DataFrame" title="pyspark.sql.DataFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a> by
 using Pandas instances. Internally it works similarly with Pandas UDFs by using Arrow to transfer
@@ -573,7 +577,7 @@ might be required in the future.</p>
 and <code class="docutils literal notranslate"><span class="pre">DataFrame.groupby().apply()</span></code> as it was; however, it is preferred to use
 <code class="docutils literal notranslate"><span class="pre">DataFrame.groupby().applyInPandas()</span></code> directly. Using <code class="docutils literal notranslate"><span class="pre">pyspark.sql.functions.PandasUDFType</span></code> will be deprecated
 in the future.</p>
-<div class="section" id="grouped-map">
+<section id="grouped-map">
 <h3>Grouped Map<a class="headerlink" href="#grouped-map" title="Permalink to this headline">¶</a></h3>
 <p>Grouped map operations with Pandas instances are supported by <code class="docutils literal notranslate"><span class="pre">DataFrame.groupby().applyInPandas()</span></code>
 which requires a Python function that takes a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> and return another <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>.
@@ -621,8 +625,8 @@ in the group.</p>
 </pre></div>
 </div>
 <p>For detailed usage, please see  please see <a class="reference internal" href="../../reference/api/pyspark.sql.GroupedData.applyInPandas.html#pyspark.sql.GroupedData.applyInPandas" title="pyspark.sql.GroupedData.applyInPandas"><code class="xref py py-meth docutils literal notranslate"><span class="pre">GroupedData.applyInPandas()</span></code></a></p>
-</div>
-<div class="section" id="map">
+</section>
+<section id="map">
 <h3>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h3>
 <p>Map operations with Pandas instances are supported by <a class="reference internal" href="../../reference/api/pyspark.sql.DataFrame.mapInPandas.html#pyspark.sql.DataFrame.mapInPandas" title="pyspark.sql.DataFrame.mapInPandas"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataFrame.mapInPandas()</span></code></a> which maps an iterator
 of <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>s to another iterator of <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>s that represents the current
@@ -645,8 +649,8 @@ Pandas UDFs although internally it works similarly with Series to Series Pandas 
 </pre></div>
 </div>
 <p>For detailed usage, please see <a class="reference internal" href="../../reference/api/pyspark.sql.DataFrame.mapInPandas.html#pyspark.sql.DataFrame.mapInPandas" title="pyspark.sql.DataFrame.mapInPandas"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataFrame.mapInPandas()</span></code></a>.</p>
-</div>
-<div class="section" id="co-grouped-map">
+</section>
+<section id="co-grouped-map">
 <h3>Co-grouped Map<a class="headerlink" href="#co-grouped-map" title="Permalink to this headline">¶</a></h3>
 <p>Co-grouped map operations with Pandas instances are supported by <code class="docutils literal notranslate"><span class="pre">DataFrame.groupby().cogroup().applyInPandas()</span></code> which
 allows two PySpark <a class="reference internal" href="../../reference/api/pyspark.sql.DataFrame.html#pyspark.sql.DataFrame" title="pyspark.sql.DataFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>s to be cogrouped by a common key and then a Python function applied to each
@@ -695,17 +699,17 @@ is not applied and it is up to the user to ensure that the cogrouped data will f
 </pre></div>
 </div>
 <p>For detailed usage, please see <a class="reference internal" href="../../reference/api/pyspark.sql.PandasCogroupedOps.applyInPandas.html#pyspark.sql.PandasCogroupedOps.applyInPandas" title="pyspark.sql.PandasCogroupedOps.applyInPandas"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PandasCogroupedOps.applyInPandas()</span></code></a></p>
-</div>
-</div>
-<div class="section" id="usage-notes">
+</section>
+</section>
+<section id="usage-notes">
 <h2>Usage Notes<a class="headerlink" href="#usage-notes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="supported-sql-types">
+<section id="supported-sql-types">
 <h3>Supported SQL Types<a class="headerlink" href="#supported-sql-types" title="Permalink to this headline">¶</a></h3>
 <p>Currently, all Spark SQL data types are supported by Arrow-based conversion except
 <a class="reference internal" href="../../reference/api/pyspark.sql.types.ArrayType.html#pyspark.sql.types.ArrayType" title="pyspark.sql.types.ArrayType"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArrayType</span></code></a> of <a class="reference internal" href="../../reference/api/pyspark.sql.types.TimestampType.html#pyspark.sql.types.TimestampType" title="pyspark.sql.types.TimestampType"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimestampType</span></code></a>, and nested <a class="reference internal" href="../../reference/api/pyspark.sql.types.StructType.html#pyspark.sql.types.StructType" title="pyspark.sql.types.StructType"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructType</span></code></a>.
 :class: <cite>MapType</cite> is only supported when using PyArrow 2.0.0 and above.</p>
-</div>
-<div class="section" id="setting-arrow-batch-size">
+</section>
+<section id="setting-arrow-batch-size">
 <h3>Setting Arrow Batch Size<a class="headerlink" href="#setting-arrow-batch-size" title="Permalink to this headline">¶</a></h3>
 <p>Data partitions in Spark are converted into Arrow record batches, which can temporarily lead to
 high memory usage in the JVM. To avoid possible out of memory exceptions, the size of the Arrow
@@ -714,8 +718,8 @@ to an integer that will determine the maximum number of rows for each batch. The
 10,000 records per batch. If the number of columns is large, the value should be adjusted
 accordingly. Using this limit, each data partition will be made into 1 or more record batches for
 processing.</p>
-</div>
-<div class="section" id="timestamp-with-time-zone-semantics">
+</section>
+<section id="timestamp-with-time-zone-semantics">
 <h3>Timestamp with Time Zone Semantics<a class="headerlink" href="#timestamp-with-time-zone-semantics" title="Permalink to this headline">¶</a></h3>
 <p>Spark internally stores timestamps as UTC values, and timestamp data that is brought in without
 a specified time zone is converted as local time to UTC with microsecond resolution. When timestamp
@@ -736,14 +740,14 @@ values will be truncated.</p>
 different than a Pandas timestamp. It is recommended to use Pandas time series functionality when
 working with timestamps in <code class="docutils literal notranslate"><span class="pre">pandas_udf</span></code>s to get the best performance, see
 <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/timeseries.html">here</a> for details.</p>
-</div>
-<div class="section" id="recommended-pandas-and-pyarrow-versions">
+</section>
+<section id="recommended-pandas-and-pyarrow-versions">
 <h3>Recommended Pandas and PyArrow Versions<a class="headerlink" href="#recommended-pandas-and-pyarrow-versions" title="Permalink to this headline">¶</a></h3>
 <p>For usage with pyspark.sql, the minimum supported versions of Pandas is 0.23.2 and PyArrow is 1.0.0.
 Higher versions may be used, however, compatibility and data correctness can not be guaranteed and should
 be verified by the user.</p>
-</div>
-<div class="section" id="compatibility-setting-for-pyarrow-0-15-0-and-spark-2-3-x-2-4-x">
+</section>
+<section id="compatibility-setting-for-pyarrow-0-15-0-and-spark-2-3-x-2-4-x">
 <h3>Compatibility Setting for PyArrow &gt;= 0.15.0 and Spark 2.3.x, 2.4.x<a class="headerlink" href="#compatibility-setting-for-pyarrow-0-15-0-and-spark-2-3-x-2-4-x" title="Permalink to this headline">¶</a></h3>
 <p>Since Arrow 0.15.0, a change in the binary IPC format requires an environment variable to be
 compatible with previous versions of Arrow &lt;= 0.14.1. This is only necessary to do for PySpark
@@ -757,8 +761,8 @@ is in Spark 2.3.x and 2.4.x. Not setting this environment variable will lead to 
 described in <a class="reference external" href="https://issues.apache.org/jira/browse/SPARK-29367">SPARK-29367</a> when running
 <code class="docutils literal notranslate"><span class="pre">pandas_udf</span></code>s or <a class="reference internal" href="../../reference/api/pyspark.sql.DataFrame.toPandas.html#pyspark.sql.DataFrame.toPandas" title="pyspark.sql.DataFrame.toPandas"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataFrame.toPandas()</span></code></a> with Arrow enabled. More information about the Arrow IPC change can
 be read on the Arrow 0.15.0 release <a class="reference external" href="https://arrow.apache.org/blog/2019/10/06/0.15.0-release/#columnar-streaming-protocol-change-since-0140">blog</a>.</p>
-</div>
-<div class="section" id="setting-arrow-self-destruct-for-memory-savings">
+</section>
+<section id="setting-arrow-self-destruct-for-memory-savings">
 <h3>Setting Arrow <code class="docutils literal notranslate"><span class="pre">self_destruct</span></code> for memory savings<a class="headerlink" href="#setting-arrow-self-destruct-for-memory-savings" title="Permalink to this headline">¶</a></h3>
 <p>Since Spark 3.2, the Spark configuration <code class="docutils literal notranslate"><span class="pre">spark.sql.execution.arrow.pyspark.selfDestruct.enabled</span></code> can be used to enable PyArrow’s <code class="docutils literal notranslate"><span class="pre">self_destruct</span></code> feature, which can save memory when creating a Pandas DataFrame via <code class="docutils literal notranslate"><span class="pre">toPandas</span></code> by freeing Arrow-allocated memory while building the Pandas DataFrame.
 This option is experimental, and some operations may fail on the resulting Pandas DataFrame due to immutable backing arrays.
@@ -766,18 +770,17 @@ Typically, you would see the error <code class="docutils literal notranslate"><s
 Newer versions of Pandas may fix these errors by improving support for such cases.
 You can work around this error by copying the column(s) beforehand.
 Additionally, this conversion may be slower because it is single-threaded.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
@@ -785,20 +788,19 @@ Additionally, this conversion may be slower because it is single-threaded.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

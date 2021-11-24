@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>DataFrame &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.DataFrame" href="api/pyspark.pandas.DataFrame.html" />
     <link rel="prev" title="pyspark.pandas.Series.pandas_on_spark.transform_batch" href="api/pyspark.pandas.Series.pandas_on_spark.transform_batch.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9449,29 +9453,21 @@
               
               <div>
                 
-  <div class="section" id="dataframe">
+  <section id="dataframe">
 <span id="api-dataframe"></span><h1>DataFrame<a class="headerlink" href="#dataframe" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="constructor">
+<section id="constructor">
 <h2>Constructor<a class="headerlink" href="#constructor" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.html#pyspark.pandas.DataFrame" title="pyspark.pandas.DataFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>([data, index, columns, dtype, copy])</p></td>
 <td><p>pandas-on-Spark DataFrame that corresponds to pandas DataFrame logically.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="attributes-and-underlying-data">
+</section>
+<section id="attributes-and-underlying-data">
 <h2>Attributes and underlying data<a class="headerlink" href="#attributes-and-underlying-data" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.index.html#pyspark.pandas.DataFrame.index" title="pyspark.pandas.DataFrame.index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.index</span></code></a></p></td>
 <td><p>The index (row labels) Column of the DataFrame.</p></td>
@@ -9485,10 +9481,6 @@
 </tbody>
 </table>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.dtypes.html#pyspark.pandas.DataFrame.dtypes" title="pyspark.pandas.DataFrame.dtypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.dtypes</span></code></a></p></td>
 <td><p>Return the dtypes in the DataFrame.</p></td>
@@ -9513,14 +9505,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="conversion">
+</section>
+<section id="conversion">
 <h2>Conversion<a class="headerlink" href="#conversion" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.copy.html#pyspark.pandas.DataFrame.copy" title="pyspark.pandas.DataFrame.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.copy</span></code></a>([deep])</p></td>
 <td><p>Make a copy of this object’s indices and data.</p></td>
@@ -9548,14 +9536,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="indexing-iteration">
+</section>
+<section id="indexing-iteration">
 <h2>Indexing, iteration<a class="headerlink" href="#indexing-iteration" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.at.html#pyspark.pandas.DataFrame.at" title="pyspark.pandas.DataFrame.at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.at</span></code></a></p></td>
 <td><p>Access a single value for a row/column label pair.</p></td>
@@ -9616,14 +9600,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="binary-operator-functions">
+</section>
+<section id="binary-operator-functions">
 <h2>Binary operator functions<a class="headerlink" href="#binary-operator-functions" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.add.html#pyspark.pandas.DataFrame.add" title="pyspark.pandas.DataFrame.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.add</span></code></a>(other)</p></td>
 <td><p>Get Addition of dataframe and other, element-wise (binary operator <cite>+</cite>).</p></td>
@@ -9696,14 +9676,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="function-application-groupby-window">
+</section>
+<section id="function-application-groupby-window">
 <h2>Function application, GroupBy &amp; Window<a class="headerlink" href="#function-application-groupby-window" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.apply.html#pyspark.pandas.DataFrame.apply" title="pyspark.pandas.DataFrame.apply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.apply</span></code></a>(func[, axis, args])</p></td>
 <td><p>Apply a function along an axis of the DataFrame.</p></td>
@@ -9734,14 +9710,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="computations-descriptive-stats">
+</section>
+<section id="computations-descriptive-stats">
 <span id="api-dataframe-stats"></span><h2>Computations / Descriptive Stats<a class="headerlink" href="#computations-descriptive-stats" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.abs.html#pyspark.pandas.DataFrame.abs" title="pyspark.pandas.DataFrame.abs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.abs</span></code></a>()</p></td>
 <td><p>Return a Series/DataFrame with absolute numeric value of each element.</p></td>
@@ -9838,14 +9810,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="reindexing-selection-label-manipulation">
+</section>
+<section id="reindexing-selection-label-manipulation">
 <h2>Reindexing / Selection / Label manipulation<a class="headerlink" href="#reindexing-selection-label-manipulation" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.add_prefix.html#pyspark.pandas.DataFrame.add_prefix" title="pyspark.pandas.DataFrame.add_prefix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.add_prefix</span></code></a>(prefix)</p></td>
 <td><p>Prefix labels with string <cite>prefix</cite>.</p></td>
@@ -9921,14 +9889,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="missing-data-handling">
+</section>
+<section id="missing-data-handling">
 <span id="api-dataframe-missing"></span><h2>Missing data handling<a class="headerlink" href="#missing-data-handling" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.backfill.html#pyspark.pandas.DataFrame.backfill" title="pyspark.pandas.DataFrame.backfill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.backfill</span></code></a>([axis, inplace, limit])</p></td>
 <td><p>Synonym for <cite>DataFrame.fillna()</cite> or <cite>Series.fillna()</cite> with <code class="docutils literal notranslate"><span class="pre">method=`bfill`</span></code>.</p></td>
@@ -9950,14 +9914,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="reshaping-sorting-transposing">
+</section>
+<section id="reshaping-sorting-transposing">
 <h2>Reshaping, sorting, transposing<a class="headerlink" href="#reshaping-sorting-transposing" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.pivot_table.html#pyspark.pandas.DataFrame.pivot_table" title="pyspark.pandas.DataFrame.pivot_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.pivot_table</span></code></a>([values, index, …])</p></td>
 <td><p>Create a spreadsheet-style pivot table as a DataFrame.</p></td>
@@ -10009,14 +9969,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="combining-joining-merging">
+</section>
+<section id="combining-joining-merging">
 <h2>Combining / joining / merging<a class="headerlink" href="#combining-joining-merging" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.append.html#pyspark.pandas.DataFrame.append" title="pyspark.pandas.DataFrame.append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.append</span></code></a>(other[, ignore_index, …])</p></td>
 <td><p>Append rows of other to the end of caller, returning a new object.</p></td>
@@ -10038,14 +9994,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="time-series-related">
+</section>
+<section id="time-series-related">
 <h2>Time series-related<a class="headerlink" href="#time-series-related" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.shift.html#pyspark.pandas.DataFrame.shift" title="pyspark.pandas.DataFrame.shift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.shift</span></code></a>([periods, fill_value])</p></td>
 <td><p>Shift DataFrame by desired number of periods.</p></td>
@@ -10058,14 +10010,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="serialization-io-conversion">
+</section>
+<section id="serialization-io-conversion">
 <h2>Serialization / IO / Conversion<a class="headerlink" href="#serialization-io-conversion" title="Permalink to this headline">¶</a></h2>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.from_records.html#pyspark.pandas.DataFrame.from_records" title="pyspark.pandas.DataFrame.from_records"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.from_records</span></code></a>(data[, index, …])</p></td>
 <td><p>Convert structured or record ndarray to DataFrame.</p></td>
@@ -10129,16 +10077,12 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="spark-related">
+</section>
+<section id="spark-related">
 <h2>Spark-related<a class="headerlink" href="#spark-related" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">DataFrame.spark</span></code> provides features that does not exist in pandas but
 in Spark. These can be accessed by <code class="docutils literal notranslate"><span class="pre">DataFrame.spark.&lt;function/property&gt;</span></code>.</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.spark.schema.html#pyspark.pandas.DataFrame.spark.schema" title="pyspark.pandas.DataFrame.spark.schema"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.spark.schema</span></code></a>([index_col])</p></td>
 <td><p>Returns the underlying Spark schema.</p></td>
@@ -10184,16 +10128,12 @@ in Spark. These can be accessed by <code class="docutils literal notranslate"><s
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="plotting">
+</section>
+<section id="plotting">
 <span id="api-dataframe-plot"></span><h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">DataFrame.plot</span></code> is both a callable method and a namespace attribute for
 specific plotting methods of the form <code class="docutils literal notranslate"><span class="pre">DataFrame.plot.&lt;kind&gt;</span></code>.</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.plot.html#pyspark.pandas.DataFrame.plot" title="pyspark.pandas.DataFrame.plot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.plot</span></code></a></p></td>
 <td><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.pandas.plot.core.PandasOnSparkPlotAccessor</span></code></p></td>
@@ -10230,16 +10170,12 @@ specific plotting methods of the form <code class="docutils literal notranslate"
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="pandas-on-spark-specific">
+</section>
+<section id="pandas-on-spark-specific">
 <h2>Pandas-on-Spark specific<a class="headerlink" href="#pandas-on-spark-specific" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark</span></code> provides pandas-on-Spark specific features that exists only in pandas API on Spark.
 These can be accessed by <code class="docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark.&lt;function/property&gt;</span></code>.</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/pyspark.pandas.DataFrame.pandas_on_spark.attach_id_column.html#pyspark.pandas.DataFrame.pandas_on_spark.attach_id_column" title="pyspark.pandas.DataFrame.pandas_on_spark.attach_id_column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame.pandas_on_spark.attach_id_column</span></code></a>(…)</p></td>
 <td><p>Attach a column to be used as identifier of rows similar to the default index.</p></td>
@@ -10252,19 +10188,30 @@ These can be accessed by <code class="docutils literal notranslate"><span class=
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="api/pyspark.pandas.Series.pandas_on_spark.transform_batch.html" title="previous page">pyspark.pandas.Series.pandas_on_spark.transform_batch</a>
-    <a class='right-next' id="next-link" href="api/pyspark.pandas.DataFrame.html" title="next page">pyspark.pandas.DataFrame</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="api/pyspark.pandas.Series.pandas_on_spark.transform_batch.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.Series.pandas_on_spark.transform_batch</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="api/pyspark.pandas.DataFrame.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.DataFrame</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -10272,20 +10219,19 @@ These can be accessed by <code class="docutils literal notranslate"><span class=
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

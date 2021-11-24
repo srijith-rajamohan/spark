@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>PowerIterationClustering &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="StreamingKMeans" href="pyspark.mllib.clustering.StreamingKMeans.html" />
     <link rel="prev" title="PowerIterationClusteringModel" href="pyspark.mllib.clustering.PowerIterationClusteringModel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,13 +9366,13 @@
               
               <div>
                 
-  <div class="section" id="poweriterationclustering">
+  <section id="poweriterationclustering">
 <h1>PowerIterationClustering<a class="headerlink" href="#poweriterationclustering" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.clustering.PowerIterationClustering">
 <em class="property">class </em><code class="sig-prename descclassname">pyspark.mllib.clustering.</code><code class="sig-name descname">PowerIterationClustering</code><a class="reference internal" href="../../_modules/pyspark/mllib/clustering.html#PowerIterationClustering"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyspark.mllib.clustering.PowerIterationClustering" title="Permalink to this definition">¶</a></dt>
 <dd><p>Power Iteration Clustering (PIC), a scalable graph clustering algorithm.</p>
-<p>Developed by Lin and Cohen <a class="reference internal" href="#rfc90c67e2119-1" id="id1">[1]</a>. From the abstract:</p>
+<p>Developed by Lin and Cohen <a class="reference internal" href="#rfc90c67e2119-1" id="citation-reference-1">[1]</a>. From the abstract:</p>
 <blockquote>
 <div><p>“PIC finds a very low-dimensional embedding of a
 dataset using truncated power iteration on a normalized pair-wise
@@ -9377,18 +9381,15 @@ similarity matrix of the data.”</p>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version 1.5.0.</span></p>
 </div>
-<dl class="citation">
-<dt class="label" id="rfc90c67e2119-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Lin, Frank &amp; Cohen, William. (2010). Power Iteration Clustering.
+<div role="list" class="citation-list">
+<div class="citation" id="rfc90c67e2119-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>Lin, Frank &amp; Cohen, William. (2010). Power Iteration Clustering.
 <a class="reference external" href="http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf">http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf</a></p>
-</dd>
-</dl>
+</div>
+</div>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.clustering.PowerIterationClustering.train" title="pyspark.mllib.clustering.PowerIterationClustering.train"><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code></a>(rdd, k[, maxIterations, initMode])</p></td>
 <td><p>Train PowerIterationClusteringModel</p></td>
@@ -9404,7 +9405,7 @@ similarity matrix of the data.”</p>
 <p><span class="versionmodified added">New in version 1.5.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>rdd</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>An RDD of (i, j, s<sub>ij</sub>) tuples representing the
 affinity matrix, which is the matrix A in the PIC paper.  The
@@ -9431,18 +9432,29 @@ normalized sum similarities.
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.clustering.PowerIterationClusteringModel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">PowerIterationClusteringModel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.clustering.StreamingKMeans.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">StreamingKMeans</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.clustering.PowerIterationClusteringModel.html" title="previous page">PowerIterationClusteringModel</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.clustering.StreamingKMeans.html" title="next page">StreamingKMeans</a>
-
-              </div>
               
           </main>
           
@@ -9450,20 +9462,19 @@ normalized sum similarities.
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Testing PySpark &#8212; PySpark master documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="Debugging PySpark" href="debugging.html" />
     <link rel="prev" title="Contributing to PySpark" href="contributing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -203,7 +207,7 @@
               
               <div>
                 
-  <div class="section" id="testing-pyspark">
+  <section id="testing-pyspark">
 <h1>Testing PySpark<a class="headerlink" href="#testing-pyspark" title="Permalink to this headline">¶</a></h1>
 <p>In order to run PySpark tests, you should build Spark itself first via Maven or SBT. For example,</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>build/mvn -DskipTests clean package
@@ -216,32 +220,43 @@
 <p>Note that you may set <code class="docutils literal notranslate"><span class="pre">OBJC_DISABLE_INITIALIZE_FORK_SAFETY</span></code> environment variable to <code class="docutils literal notranslate"><span class="pre">YES</span></code> if you are running tests on Mac OS.</p>
 <p>Please see the guidance on how to <a class="reference external" href="https://github.com/apache/spark#building-spark">build Spark</a>,
 <a class="reference external" href="https://spark.apache.org/developer-tools.html">run tests for a module, or individual tests</a>.</p>
-<div class="section" id="running-individual-pyspark-tests">
+<section id="running-individual-pyspark-tests">
 <h2>Running Individual PySpark Tests<a class="headerlink" href="#running-individual-pyspark-tests" title="Permalink to this headline">¶</a></h2>
 <p>You can run a specific test via using <code class="docutils literal notranslate"><span class="pre">python/run-tests</span></code>, for example, as below:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python/run-tests --testnames pyspark.sql.tests.test_arrow
 </pre></div>
 </div>
 <p>Please refer to <a class="reference external" href="https://spark.apache.org/developer-tools.html">Testing PySpark</a> for more details.</p>
-</div>
-<div class="section" id="running-tests-using-github-actions">
+</section>
+<section id="running-tests-using-github-actions">
 <h2>Running tests using GitHub Actions<a class="headerlink" href="#running-tests-using-github-actions" title="Permalink to this headline">¶</a></h2>
 <p>You can run the full PySpark tests by using GitHub Actions in your own forked GitHub
 repository with a few clicks. Please refer to
 <a class="reference external" href="https://spark.apache.org/developer-tools.html">Running tests in your forked repository using GitHub Actions</a> for more details.</p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="contributing.html" title="previous page">Contributing to PySpark</a>
-    <a class='right-next' id="next-link" href="debugging.html" title="next page">Debugging PySpark</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="contributing.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Contributing to PySpark</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="debugging.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Debugging PySpark</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -249,20 +264,19 @@ repository with a few clicks. Please refer to
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

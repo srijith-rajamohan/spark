@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Statistics &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="MultivariateStatisticalSummary" href="pyspark.mllib.stat.MultivariateStatisticalSummary.html" />
     <link rel="prev" title="StreamingLinearRegressionWithSGD" href="pyspark.mllib.regression.StreamingLinearRegressionWithSGD.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,17 +9366,13 @@
               
               <div>
                 
-  <div class="section" id="statistics">
+  <section id="statistics">
 <h1>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.stat.Statistics">
 <em class="property">class </em><code class="sig-prename descclassname">pyspark.mllib.stat.</code><code class="sig-name descname">Statistics</code><a class="reference internal" href="../../_modules/pyspark/mllib/stat/_statistics.html#Statistics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyspark.mllib.stat.Statistics" title="Permalink to this definition">¶</a></dt>
 <dd><p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.stat.Statistics.chiSqTest" title="pyspark.mllib.stat.Statistics.chiSqTest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chiSqTest</span></code></a>(observed[, expected])</p></td>
 <td><p>If <cite>observed</cite> is Vector, conduct Pearson’s chi-squared goodness of fit test of the observed data against the expected distribution, or against the uniform distribution (by default), with each category having an expected frequency of <cite>1 / len(observed)</cite>.</p></td>
@@ -9405,7 +9405,7 @@ For each feature, the (feature, label) pairs are converted into a
 contingency matrix for which the chi-squared statistic is computed.
 All label and feature values must be categorical.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>observed</strong><span class="classifier"><a class="reference internal" href="pyspark.mllib.linalg.Vector.html#pyspark.mllib.linalg.Vector" title="pyspark.mllib.linalg.Vector"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.linalg.Vector</span></code></a> or             <a class="reference internal" href="pyspark.mllib.linalg.Matrix.html#pyspark.mllib.linalg.Matrix" title="pyspark.mllib.linalg.Matrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.linalg.Matrix</span></code></a></span></dt><dd><p>it could be a vector containing the observed categorical
 counts/relative frequencies, or the contingency matrix
@@ -9420,7 +9420,7 @@ differs from the <cite>observed</cite> sum.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.stat.ChiSqTestResult.html#pyspark.mllib.stat.ChiSqTestResult" title="pyspark.mllib.stat.ChiSqTestResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.stat.ChiSqTestResult</span></code></a></dt><dd><p>object containing the test statistic, degrees
 of freedom, p-value, the method used, and the null hypothesis.</p>
@@ -9480,14 +9480,14 @@ of freedom, p-value, the method used, and the null hypothesis.</p>
 <em class="property">static </em><code class="sig-name descname">colStats</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rdd</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyspark/mllib/stat/_statistics.html#Statistics.colStats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyspark.mllib.stat.Statistics.colStats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes column-wise summary statistics for the input RDD[Vector].</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>rdd</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>an RDD[Vector] for which column-wise summary statistics
 are to be computed.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.stat.MultivariateStatisticalSummary.html#pyspark.mllib.stat.MultivariateStatisticalSummary" title="pyspark.mllib.stat.MultivariateStatisticalSummary"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultivariateStatisticalSummary</span></code></a></dt><dd><p>object containing column-wise summary statistics.</p>
 </dd>
@@ -9527,7 +9527,7 @@ comparing the columns in the input RDD is returned. Use <cite>method</cite>
 to specify the method to be used for single RDD inout.
 If two RDDs of floats are passed in, a single float is returned.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>x</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>an RDD of vector for which the correlation matrix is to be computed,
 or an RDD of float of the same cardinality as y when y is specified.</p>
@@ -9539,7 +9539,7 @@ Supported: <cite>pearson</cite> (default), <cite>spearman</cite></p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.linalg.Matrix.html#pyspark.mllib.linalg.Matrix" title="pyspark.mllib.linalg.Matrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.linalg.Matrix</span></code></a></dt><dd><p>Correlation matrix comparing columns in x.</p>
 </dd>
@@ -9601,7 +9601,7 @@ probability that the null hypothesis is true becomes small.
 For specific details of the implementation, please have a look
 at the Scala documentation.</p>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>data</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>RDD, samples from the data</p>
 </dd>
@@ -9615,7 +9615,7 @@ If not provided, the default values are used.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><a class="reference internal" href="pyspark.mllib.stat.KolmogorovSmirnovTestResult.html#pyspark.mllib.stat.KolmogorovSmirnovTestResult" title="pyspark.mllib.stat.KolmogorovSmirnovTestResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.mllib.stat.KolmogorovSmirnovTestResult</span></code></a></dt><dd><p>object containing the test statistic, degrees of freedom, p-value,
 the method used, and the null hypothesis.</p>
@@ -9647,18 +9647,29 @@ the method used, and the null hypothesis.</p>
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.regression.StreamingLinearRegressionWithSGD.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">StreamingLinearRegressionWithSGD</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.stat.MultivariateStatisticalSummary.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">MultivariateStatisticalSummary</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.regression.StreamingLinearRegressionWithSGD.html" title="previous page">StreamingLinearRegressionWithSGD</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.stat.MultivariateStatisticalSummary.html" title="next page">MultivariateStatisticalSummary</a>
-
-              </div>
               
           </main>
           
@@ -9666,20 +9677,19 @@ the method used, and the null hypothesis.</p>
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

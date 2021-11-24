@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.DataFrame.hist &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.DataFrame.kde" href="pyspark.pandas.DataFrame.kde.html" />
     <link rel="prev" title="pyspark.pandas.DataFrame.plot.density" href="pyspark.pandas.DataFrame.plot.density.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-dataframe-hist">
+  <section id="pyspark-pandas-dataframe-hist">
 <h1>pyspark.pandas.DataFrame.hist<a class="headerlink" href="#pyspark-pandas-dataframe-hist" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.DataFrame.hist">
@@ -9372,7 +9376,7 @@ A <a class="reference external" href="https://en.wikipedia.org/wiki/Histogram">h
 This function calls <code class="xref py py-meth docutils literal notranslate"><span class="pre">plotting.backend.plot()</span></code>,
 on each series in the DataFrame, resulting in one histogram per column.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>bins</strong><span class="classifier">integer or sequence, default 10</span></dt><dd><p>Number of histogram bins to be used. If an integer is given, bins + 1
 bin edges are calculated and returned. If bins is a sequence, gives
@@ -9384,7 +9388,7 @@ plotting backend.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><code class="xref py py-class docutils literal notranslate"><span class="pre">plotly.graph_objs.Figure</span></code></dt><dd><p>Return an custom object when <code class="docutils literal notranslate"><span class="pre">backend!=plotly</span></code>.
 Return an ndarray when <code class="docutils literal notranslate"><span class="pre">subplots=True</span></code> (matplotlib-only).</p>
@@ -9412,18 +9416,29 @@ Return an ndarray when <code class="docutils literal notranslate"><span class="p
 <iframe src="pyspark-pandas-DataFrame-hist-2.html" width="100%"
  height="500px" frameborder="0"></iframe></dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.plot.density.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.DataFrame.plot.density</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.kde.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.DataFrame.kde</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.DataFrame.plot.density.html" title="previous page">pyspark.pandas.DataFrame.plot.density</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.DataFrame.kde.html" title="next page">pyspark.pandas.DataFrame.kde</a>
-
-              </div>
               
           </main>
           
@@ -9431,20 +9446,19 @@ Return an ndarray when <code class="docutils literal notranslate"><span class="p
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

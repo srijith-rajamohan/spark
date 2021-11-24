@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>pyspark.pandas.Series.str.split &#8212; PySpark master documentation</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="pyspark.pandas.Series.str.startswith" href="pyspark.pandas.Series.str.startswith.html" />
     <link rel="prev" title="pyspark.pandas.Series.str.slice_replace" href="pyspark.pandas.Series.str.slice_replace.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="pyspark-pandas-series-str-split">
+  <section id="pyspark-pandas-series-str-split">
 <h1>pyspark.pandas.Series.str.split<a class="headerlink" href="#pyspark-pandas-series-str-split" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt id="pyspark.pandas.Series.str.split">
@@ -9371,7 +9375,7 @@
 <p>Splits the string in the Series from the beginning, at the specified
 delimiter string. Equivalent to <a class="reference internal" href="#pyspark.pandas.Series.str.split" title="pyspark.pandas.Series.str.split"><code class="xref py py-func docutils literal notranslate"><span class="pre">str.split()</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>pat</strong><span class="classifier">str, optional</span></dt><dd><p>String or regular expression to split on. If not specified, split
 on whitespace.</p>
@@ -9388,7 +9392,7 @@ dimensionality.</p></li>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>Series, DataFrame</dt><dd><p>Type matches caller unless <cite>expand=True</cite> (see Notes).</p>
 </dd>
@@ -9403,7 +9407,7 @@ dimensionality.</p></li>
 <dt><a class="reference internal" href="pyspark.pandas.Series.str.join.html#pyspark.pandas.Series.str.join" title="pyspark.pandas.Series.str.join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str.join</span></code></a></dt><dd><p>Join lists contained as elements in the Series/Index with passed delimiter.</p>
 </dd>
 </dl>
-</div>
+</aside>
 <p class="rubric">Notes</p>
 <p>The handling of the <cite>n</cite> keyword depends on the number of found splits:</p>
 <ul class="simple">
@@ -9417,7 +9421,7 @@ append <cite>None</cite> for padding up to <cite>n</cite> if <code class="docuti
 <p class="admonition-title">Note</p>
 <p>Even if <cite>n</cite> is much larger than found splits, the number of columns does NOT
 shrink unlike pandas.</p>
-</div>
+</aside>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;this is a regular sentence&quot;</span><span class="p">,</span>
 <span class="gp">... </span>               <span class="s2">&quot;https://docs.python.org/3/tutorial/index.html&quot;</span><span class="p">,</span>
@@ -9493,18 +9497,29 @@ expressions.</p>
 </div>
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.pandas.Series.str.slice_replace.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyspark.pandas.Series.str.slice_replace</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.pandas.Series.str.startswith.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyspark.pandas.Series.str.startswith</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.pandas.Series.str.slice_replace.html" title="previous page">pyspark.pandas.Series.str.slice_replace</a>
-    <a class='right-next' id="next-link" href="pyspark.pandas.Series.str.startswith.html" title="next page">pyspark.pandas.Series.str.startswith</a>
-
-              </div>
               
           </main>
           
@@ -9512,20 +9527,19 @@ expressions.</p>
       </div>
     </div>
   
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     

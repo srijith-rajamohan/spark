@@ -3,11 +3,12 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>BisectingKMeans &#8212; PySpark master documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -21,11 +22,11 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/blank.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/pyspark.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -40,7 +41,10 @@
     <link rel="next" title="KMeansModel" href="pyspark.mllib.clustering.KMeansModel.html" />
     <link rel="prev" title="BisectingKMeansModel" href="pyspark.mllib.clustering.BisectingKMeansModel.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -9362,7 +9366,7 @@
               
               <div>
                 
-  <div class="section" id="bisectingkmeans">
+  <section id="bisectingkmeans">
 <h1>BisectingKMeans<a class="headerlink" href="#bisectingkmeans" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="pyspark.mllib.clustering.BisectingKMeans">
@@ -9382,20 +9386,17 @@ clusters, larger clusters get higher priority.</p>
 <p><span class="versionmodified added">New in version 2.0.0.</span></p>
 </div>
 <p class="rubric">Notes</p>
-<p>See the original paper <a class="reference internal" href="#r988c39927bdb-1" id="id1">[1]</a></p>
-<dl class="citation">
-<dt class="label" id="r988c39927bdb-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Steinbach, M. et al. “A Comparison of Document Clustering Techniques.” (2000).
+<p>See the original paper <a class="reference internal" href="#r988c39927bdb-1" id="citation-reference-1">[1]</a></p>
+<div role="list" class="citation-list">
+<div class="citation" id="r988c39927bdb-1" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#citation-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>Steinbach, M. et al. “A Comparison of Document Clustering Techniques.” (2000).
 KDD Workshop on Text Mining, 2000
 <a class="reference external" href="http://glaros.dtc.umn.edu/gkhome/fetch/papers/docclusterKDDTMW00.pdf">http://glaros.dtc.umn.edu/gkhome/fetch/papers/docclusterKDDTMW00.pdf</a></p>
-</dd>
-</dl>
+</div>
+</div>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyspark.mllib.clustering.BisectingKMeans.train" title="pyspark.mllib.clustering.BisectingKMeans.train"><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code></a>(rdd[, k, maxIterations, …])</p></td>
 <td><p>Runs the bisecting k-means algorithm return the model.</p></td>
@@ -9411,7 +9412,7 @@ KDD Workshop on Text Mining, 2000
 <p><span class="versionmodified added">New in version 2.0.0.</span></p>
 </div>
 <dl class="field-list">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>rdd</strong><span class="classifier"><a class="reference internal" href="pyspark.RDD.html#pyspark.RDD" title="pyspark.RDD"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyspark.RDD</span></code></a></span></dt><dd><p>Training points as an <cite>RDD</cite> of <cite>Vector</cite> or convertible
 sequence types.</p>
@@ -9437,18 +9438,29 @@ of points (if &lt; 1.0) of a divisible cluster.
 
 </dd></dl>
 
+</section>
+
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pyspark.mllib.clustering.BisectingKMeansModel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">BisectingKMeansModel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="pyspark.mllib.clustering.KMeansModel.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">KMeansModel</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
-
-
-              </div>
-              
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="pyspark.mllib.clustering.BisectingKMeansModel.html" title="previous page">BisectingKMeansModel</a>
-    <a class='right-next' id="next-link" href="pyspark.mllib.clustering.KMeansModel.html" title="next page">KMeansModel</a>
-
-              </div>
               
           </main>
           
@@ -9456,20 +9468,19 @@ of points (if &lt; 1.0) of a divisible cluster.
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright .<br/>
+    &copy; Copyright .<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.<br>
 </p>
     </div>
     
